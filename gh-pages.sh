@@ -6,6 +6,4 @@ cp -r ../build/* .
 cp -r ../build/.* .
 git add .
 git commit -m 'built site'
-git push origin
-cd ..
-rm -rf .gh-pages/
+git push origin && cd .. && rm -rf .gh-pages/
