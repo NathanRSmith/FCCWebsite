@@ -3,9 +3,7 @@ git clone https://github.com/NathanRSmith/FCCWebsite.git .gh-pages --branch=gh-p
 cd .gh-pages/
 git rm -r .
 cp -r ../build/* .
-cp -r ../build/.* .
+touch .nojekyll
 git add .
 git commit -m 'built site'
-git push origin
-cd ..
-rm -rf .gh-pages/
+git push origin && cd .. && rm -rf .gh-pages/
