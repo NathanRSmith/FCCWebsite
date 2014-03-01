@@ -13,3 +13,7 @@ Built site is in build directory.
 
     cd build
     python -m SimpleHTTPServer
+
+To push to gh-pages
+
+    ghp-import -np build

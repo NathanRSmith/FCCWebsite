@@ -6,4 +6,4 @@ cp -r ../build/* .
 touch .nojekyll
 git add .
 git commit -m 'built site'
-git push origin && cd .. && rm -rf .gh-pages/
+git push origin gh-pages && cd .. && rm -rf .gh-pages/
