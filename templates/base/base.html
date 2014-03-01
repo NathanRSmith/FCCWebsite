@@ -13,35 +13,35 @@
     {% block subheading %}{% endblock %}
     {% block nav %}
         <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/welcome.html">Welcome</a></li>
+            <li><a href="{{ root }}index.html">Home</a></li>
+            <li><a href="{{ root }}welcome.html">Welcome</a></li>
             <li>
-                <a href="/whoweare.html">Who We Are</a>
+                <a href="{{ root }}whoweare.html">Who We Are</a>
                 <ul>
-                    <li><a href="/history.html">History</a></li>
-                    <li><a href="/current.html">Current</a></li>
-                    <li><a href="/staff.html">Staff</a></li>
-                    <li><a href="/beliefs.html">Beliefs</a></li>
+                    <li><a href="{{ root }}history.html">History</a></li>
+                    <li><a href="{{ root }}current.html">Current</a></li>
+                    <li><a href="{{ root }}staff.html">Staff</a></li>
+                    <li><a href="{{ root }}beliefs.html">Beliefs</a></li>
                 </ul>
             </li>
-            <li><a href="/whatwedo.html">What We Do</a>
+            <li><a href="{{ root }}whatwedo.html">What We Do</a>
                 <ul>
-                    <li><a href="/youth.html">Youth</a></li>
-                    <li><a href="/children.html">Children</a></li>
-                    <li><a href="/adults.html">Adults</a></li>
-                    <li><a href="/teams.html">Ministry Teams</a></li>
+                    <li><a href="{{ root }}youth.html">Youth</a></li>
+                    <li><a href="{{ root }}children.html">Children</a></li>
+                    <li><a href="{{ root }}adults.html">Adults</a></li>
+                    <li><a href="{{ root }}teams.html">Ministry Teams</a></li>
                 </ul>
             </li>
-            <li><a href="/youth.html">Youth</a></li>
-            <li><a href="/calendar.html">Calendar</a></li>
-            <li><a href="/global.html">Global Focus</a>
+            <li><a href="{{ root }}youth.html">Youth</a></li>
+            <li><a href="{{ root }}calendar.html">Calendar</a></li>
+            <li><a href="{{ root }}global.html">Global Focus</a>
                 <ul>
-                    <li><a href="/global/shorttermteams.html">Short Term Teams</a></li>
-                    <li><a href="/global/abraham.html">Abraham Project</a></li>
-                    <li><a href="/global/kennedy.html">Cabecar</a></li>
+                    <li><a href="{{ root }}global/shorttermteams.html">Short Term Teams</a></li>
+                    <li><a href="{{ root }}global/abraham.html">Abraham Project</a></li>
+                    <li><a href="{{ root }}global/kennedy.html">Cabecar</a></li>
                 </ul>
             </li>
-            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="{{ root }}contact.html">Contact Us</a></li>
         </ul>
     {% endblock %}
     {% block body %}{% endblock %}

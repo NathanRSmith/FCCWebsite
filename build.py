@@ -29,11 +29,14 @@ def build():
             
         for template in files:
             path_rel_build = sroot[len(PAGES_DIR.split(os.sep)):]
+            root_url_list = [os.pardir]*len(path_rel_build)
+            root_url = '/'.join(root_url_list)
             
             context = {
-                'static': '/'.join([os.pardir]*len(path_rel_build)+[STATIC_DIR]),
-                'media': '/'.join([os.pardir]*len(path_rel_build)+[MEDIA_DIR]),
-                'bower': '/'.join([os.pardir]*len(path_rel_build)+[BOWER_DIR]),
+                'root': root_url+'/' if len(root_url)>0 else root_url,
+                'static': '/'.join(root_url_list+[STATIC_DIR, '']),
+                'media': '/'.join(root_url_list+[MEDIA_DIR, '']),
+                'bower': '/'.join(root_url_list+[BOWER_DIR, '']),
             }
             
             # pdb.set_trace()
