@@ -1,0 +1,193 @@
+body{
+  color:#444;
+  background:#fff;
+  font-family:tahoma, arial;
+  font-size:12px;
+  line-height:18px;
+  margin:0px;
+  padding:0px;
+  border:0px;
+}
+
+.red{
+  color:red;
+}
+
+h1{
+  font-size:40px;
+  line-height:40px;
+  margin-top:10px;
+  margin-bottom:20px;
+}
+
+h2{
+  font-size:20px;
+  line-height:20px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+h3{
+  font-size:17px;
+  line-height:17px;
+  font-weight:normal;
+  margin-top:17px;
+  margin-bottom:17px;
+}
+
+h4{
+  font-size:15px;
+  line-height:15px;
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+h5{
+  font-size:14px;
+  line-height:14px;
+  margin-top:14px;
+  margin-bottom:14px;
+}
+
+h3 a, h3 a:hover{
+  color:#365eab;
+}
+
+hr{
+  background:#ddd;
+  height:1px;
+  border:0px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+b, strong{
+  font-weight:bold;
+}
+
+i, em{
+  font-style:italic;
+}
+
+li{
+  font-size:13px;
+  line-height:23px;
+  font-weight:bold;
+}
+
+li ul li a, li ul li a:hover {
+  color:#777;
+  border-color:#777;
+}
+
+table, th, td{
+ margin:0px;
+ padding:0px;
+ border:0px;
+ font-size:13px;
+}
+
+a{
+  color:#ff0632;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+a:hover{
+  color:#ff0632;
+  text-decoration:none;
+  border-bottom: 1px dotted #ff0632;
+}
+
+h1 a, h1 a:hover{
+  padding-top:100px;
+  border:0px;
+  display:block;
+}
+
+h2 a, h3 a, h2 a:hover, h3 a:hover {
+  padding-top:50px;
+  border:0px;
+  display:block;
+}
+
+::selection{
+  color:#fff;
+  background:#ff0632;
+}
+::-moz-selection{
+  color:#fff;
+  background:#ff0632;
+}
+
+#container{
+  position:relative;
+  width:800px;
+  margin:20px auto;
+  display:block;
+  background:#fafafa;
+  padding:30px 50px;
+  border:1px solid #f2f2f2;
+  border-radius:10px;
+  -moz-box-shadow: 0 2px 5px #ddd;
+  -webkit-box-shadow: 0 2px 5px #ddd;
+  box-shadow: 0 2px 5px #ddd;
+  overflow:hidden;
+}  
+
+#logo{
+  position:absolute;
+  left:50px;
+  top:40px;
+}
+
+.back-to-top{
+  font-size:13px;
+  line-height:13px;
+  color:#fff;
+  background:#666;
+  border-radius:6px;
+  padding:14px;
+  width:120px;
+  text-align:center;
+  margin:40px auto;
+  font-weight:bold;
+}
+
+.back-to-top:hover{
+  background:#555;
+}
+
+.back-to-top:hover span{
+  border-bottom:1px dotted #fff;
+}
+
+.t2{
+  background:#ddd;
+  color:#444;
+}
+
+.t2:hover{
+  background:#c8c8c8;
+  border-color:#555;
+}
+
+.t2:hover span{
+  border-color:#555;
+}
+
+.empty-space{
+  height:100px;
+  display:block;
+}
+
+.bottom-text{
+  color:#ff0632;
+  text-align:center;
+}
+
+#copyright{
+  font-size:11px;
+  font-weight:bold;
+  text-align:center;
+}

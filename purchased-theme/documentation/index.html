@@ -1,0 +1,711 @@
+<!doctype html>  
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	
+	<title>RENO - Responsive WordPress Theme</title>
+	
+	<meta name="description" content="Thank you for purchasing RENO theme.">
+	<meta name="author" content="entiri s.r.o.">
+	<meta name="copyright" content="entiri s.r.o.">
+	<meta name="generator" content="pspad">
+	<meta name="date" content="2014-03-04">
+	
+	<link rel="stylesheet" href="styles.css" media="all">
+  <link href="img/favicon.png" rel="icon" type="image/png"> 
+
+  <script type="text/javascript">
+    function externalLinks() {
+     if (!document.getElementsByTagName) return;
+     var anchors = document.getElementsByTagName("a");
+     for (var i=0; i<anchors.length; i++) {
+       var anchor = anchors[i];
+       if (anchor.getAttribute("href") &&
+           anchor.getAttribute("rel") == "external")
+         anchor.target = "_blank";
+     }
+    }
+    window.onload = externalLinks;  
+  </script>
+</head>
+<body>
+<div id="container">
+
+  <a name="top"></a>
+  <img src="img/logo.png" class="logo" alt=""> 
+
+  <h1>RENO<span class="version"> v1.1</span></h1>
+  <h2>MultiPurpose WordPress WooCommerce Theme</h2>
+  <hr>
+  
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#html-files-and-structure">Installation and usage</a>
+      <ul>
+        <li><a href="#about-Reno">About RENO Theme</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#wpml">WPML</a></li>
+        <li><a href="#woocommerce">Woocommerce</a></li>
+        <li>
+          <a href="#theme-settings">Theme options</a>
+          <ul>
+            <li>
+              <a href="#general-settings">General settings</a>
+              <ul>
+                <li><a href="#portfolio-category">Portfolio category</a></li>
+                <li><a href="#portfolio-url">Portfolio url</a></li>
+                <li><a href="#blog-template">Blog template</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#styling-options">Styling options</a>
+              <ul>
+                <li><a href="#primary-theme-color">Primary theme color</a></li>
+                <li><a href="#body-background-color">Body Background Color</a></li>
+                <li><a href="#links-color-option">Links Color Option</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#header-options">Header options</a>
+              <ul>
+                <li><a href="#logo">Logo</a></li>
+              </ul>
+            </li>
+            <li><a href="#typography-options">Typography options</a></li>
+            <li><a href="#social-networks">Social networks</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#footer-options">Footer options</a></li>
+          </ul>
+        </li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#slider">Slider</a></li>
+        <li><a href="#visual-composer">Visual composer</a></li>
+      </ul>
+    </li>
+    <li><a href="#css-files-and-structure">CSS Files and Structure</a></li>
+    <li><a href="#javascript-plugins-and-scripts">JavaScript Plugins and Scripts</a></li>
+    <li><a href="#sources-and-credits">Sources and Credits</a></li>
+    <li><a href="#changelog">Changelog</a></li>
+  </ul>
+  <hr>
+  <div class="empty-space"></div>
+
+<!-- Introduction --> 
+<h2><a name="introduction">Introduction</a></h2>
+<hr>
+Created: 13/02/2014<br>
+Latest Update: 04/03/2014<br>
+By: entiri s.r.o. <br>
+E-mail: <a href="mailto:support@entiri.sk" rel="external">support@entiri.sk</a><br>
+<br>
+Thank you for purchasing RENO Theme.
+<hr>
+<a href="#top"><div class="back-to-top"><span>Back to Top</span></div></a>
+<div class="empty-space"></div>
+
+<!-- HTML Files and Structure --> 
+<h2><a name="html-files-and-structure">Installation and usage</a></h2>
+<h3><a name="about-Reno">About RENO Theme</a></h3>
+<p>
+<strong>RENO</strong> is multipurpose WordPress WooCommerce theme suitable for companies or individuals. RENO is retina ready, translation ready, parallax ready and much more. It includes 6 Awesome Sliders (Layer Slider, Slider Revolution, Nivo Slider, Sly Slider, Refine Slider and Flex Slider). It is a great way to present your work at the highest level. It is based on popular Twitter Bootstrap 3 framework. This theme uses Visual Composer and the latest HTML5 and CSS3 technologies. You save extra $82 for premium content included in RENO theme.
+</p>  
+
+<h3><a name="installation">Installation</a></h3>
+
+<ol>
+  <li>
+    Upload The Theme
+    <ol>
+      <li>In the WP-Admin interface, navigate to Appearance > Themes</li>
+      <li>Click Add new theme</li>
+      <li>Click the Upload link in the tab content</li>
+      <li>Use the file upload field to select the reno.zip file (file is located INSIDE the zip file you downloaded)</li>
+      <li>Click the Install Now button</li>
+    </ol>
+  </li>
+  <li>
+    Activate The Theme
+    <ol>
+      <li>After confirmation of installation, navigate to Appearance > Themes</li>
+      <li>Locate the Reno theme in the listing and click its associated Activate link</li>
+      <li>Reno is now installed and activated.</li>
+    </ol>
+  </li>
+  <li>Install plugins
+    <ol>
+      <li>Navigate to Appearance > Install plugins</li>
+      <li>We recommend to check all plugins, and install them. WPBakery Visual Composer is required plugin, others are only recommended.</li>
+      <li>When you have installed the plugins, activate them in Appearance > Install plugins</li> 
+    </ol>
+  </li>
+  <li>
+    Import demo data(not necessary but recommended)
+    <ol>
+      <li>In the WP-admin, navigate to Tools > Import</li>
+      <li>Click WordPress</li>
+      <li>If you don't have installed importer, click Install now button</li>
+      <li>Choose a file "reno-demo-data.xml" and click Upload file and import</li>
+      <li>Assign posts of authors to your existing author</li>
+      <li>You can check the "Download and import file attachments" checkbox, if you want to import images.(Note that import may last longer, if you check this option)</li>
+      <li>Click Submit</li>
+      <li>Navigate to Appearance > Menus and set primary menu</li>
+    </ol>
+  </li>
+  
+</ol>
+
+<a href="#top"><div class="back-to-top t2"><span>Back to Top</span></div></a>
+
+<h3><a name="wpml">WPML</a></h3>
+<p>For more information about how to set up WPML plugin, please read this <a href="http://wpml.org/documentation/getting-started-guide/">Getting started</a> guide. WPML plugin is not included with the theme.</p>
+
+<h3><a name="woocommerce">Woocommerce</a></h3>
+<p>If you want to use e-shop features with the theme, you can install Woocommerce plugin from automatic plugin installator, which is launched after the theme activation. Alternatively, you can launch it from Appearance > Install plugins.</p>
+<p>For more information how to setup Woocommerce, please read this <a href="http://docs.woothemes.com/documentation/plugins/woocommerce/getting-started/">Getting started</a> guide.</p>
+
+<h3><a name="theme-settings">Theme options</a></h3>
+
+<p>Navigate to 'Theme options' menu to adjust theme settings</p>
+
+<h3><a name="general-settings">General settings</a></h3>
+
+<h3><a name="portfolio-category">Portfolio category</a></h3>
+<p>Theme options > General settings</p>
+<p>Set category of your portfolio posts. Children of this category will be displayed as filter for portfolio.</p>
+
+
+<h3><a name="blog-template">Blog template</a></h3>
+<p>Theme options > General settings</p>
+<p>Choose layout of the blog.</p>
+
+<h3><a name="styling-options">Styling options</a></h3>
+
+<h3><a name="primary-theme-color">Primary theme color</a></h3>
+<p>Theme options > Styling options</p>
+<p>Set the primary theme color. This color will be applied to all colored elements.</p>
+
+<h3><a name="body-background-color">Body background color</a></h3>
+<p>Theme options > Styling options</p>
+<p>Set the background color of the whole page.</p>
+
+<h3><a name="links-color-option">Links color option</a></h3>
+<p>Theme options > Styling options</p>
+<p>Here you can set default and hover color for links.</p>
+
+<h3><a name="header-options">Header options</a></h3>
+
+<h3><a name="logo">Logo</a></h3>
+<p>Theme options > Header options</p>
+<p>Here you can upload logo for the page.</p>
+
+<h3><a name="typography-options">Typography options</a></h3>
+<p>You can set font family, font weight, font size and color for body and all headings. You can choose from all Google fonts.</p>
+
+<h3><a name="social-networks">Social networks</a></h3>
+<p>Here you can set links to social networks displayed in footer. Leave the input blank, if you don't want to display specific icon.</p>
+
+<h3><a name="shop">Shop</a></h3>
+<p>Shop layout - select tempate of product listing</p>
+<p>Show clients (Brands) on shop page - Check this option if you want to display clients slider (posts in 'Clients' menu) on the shop page.</p>
+<p>Show filter - Check this option if you want to display sorting filter on product listing pages.</p>
+<p>Products per page - Set number of products displayed per page.</p>
+
+<h3><a name="footer-options">Footer options</a></h3>
+<p>Footer Text - text displayed on the left side in the footer.</p>
+<p>Address heading - Heading for middle column of the footer</p>
+<p>Address Text - Text displayed in the middle column of the footer</p>
+<p>Contact heading - Heading of the right column of the footer</p>
+<p>Phone - Insert your phone numbers</p>
+<p>Web and mail - Insert your web and mail.</p>
+<p>Copyright - Insert copyright text</p>
+<p>Site author - Insert site author text</p>
+<p>Social icons - Check this option if you want to display social networks icons in the footer.</p>
+
+<h3><a name="portfolio">Portfolio</a></h3>
+
+<p>Items in portfolio are custom post type Portfolio. To add new reference:</p>
+<ol>
+  <li>Go to Portfolio > Add new</li>
+  <li>Click "Set featured image"</li>
+  <li>Choose image from your computer or media library</li>
+  portfolio page.</li>
+  <li>
+    Compose layout of portfolio single in visual composer:
+    If you don't have visual composer enabled for portfolio posts, enable it in Settings > Visual composer.
+    If you have installed demo data, you can see how demo posts are composed. Then you can save content as template and use it in your own posts.
+    To save template hover on 'Templates' in visual composer editor and click 'Save current page as template'.
+  </li>
+  <li>In 'Portfolio properties' box set:
+    <ul>
+      <li>Excerpt: short text displayed on listing</li>
+    </ul>
+  </li>
+  <li>Click "Publish" to save Post</li>
+</ol>
+<p>To show portfolio on page, select Portfolio from Content element list in page Visual composer editor.</p>
+
+<h3><a name="clients">Clients</a></h3>
+
+Slider of clients contains custom posts "Client".
+
+<p>To add a new slide:</p>
+<ol>
+  <li>Go to Client > Add new</li>
+  <li>Click "Set featured image"</li>
+  <li>Choose image from your computer or media library</li>
+  <li>In Client properties meta box set link to your client</li>
+  <li>Click "Publish" to save slide</li>
+</ol>
+
+<p>To show slider on page, select Clients from Content element list in page Visual composer editor.</p>
+
+<h3><a name="team">Team</a></h3>
+Team members are custom posts "Team".
+
+<p>To add new team member:</p>
+<ol>
+  <li>Go to Team > Add new</li>
+  <li>Click "Set featured image"</li>
+  <li>Choose image from your computer or media library</li>
+  <li>In member properties meta box set job and social networks</li>
+  <li>Click "Publish" to save team member</li>
+  <li>Edit page where you want team box to be displayed and from shortcode dropdown select 'Our Team'</li>
+</ol>
+
+<p>To show team member on page, select 'Team member' from Content element list in page Visual composer editor.</p>
+
+<h3><a name="slider">Slider</a></h3>
+
+Slider contains custom posts "Slider". You can have multiple sliders on your page by creating categories for slider.
+
+<p>To add a new slide:</p>
+<ol>
+  <li>Go to Slider > Add new</li>
+  <li>Click "Set featured image"</li>
+  <li>Choose image from your computer or media library</li>
+  <li>Set category of slide</li>
+  <li>Insert text to the content editor</li>
+  <li>Click "Publish" to save slide</li>
+</ol>
+
+<p>To show slider on page, select 'Posts slider' from Content element list in page Visual composer editor.</p>
+
+
+<a href="#top"><div class="back-to-top t2"><span>Back to Top</span></div></a>
+
+<h3><a name="visual-composer">Visual Composer</a></h3>
+
+<p>Click Visual composer button in page editor to enable Visual composer.</p>
+<p>In the Visual Composer editor mode you'll have "Add element" button, which you should click or drag to the working canvas, to add content block or row to your page. Clicking the "Add element" button will show the content element selection menu. Content blocks are divided into categories (Show all, Content, Social, Structure, WordPress Widgets).</p>
+
+<h4>Rows</h4>
+<p>Rows are used to divide your page into the logic blocks with columns, columns later will hold your content blocks. Rows can be divided into the layouts (eg. 1/2 + 1/2, 1/3 + 1/3 + 1/3, and so on). Your page can have unlimited number of rows. To change row's position, click and drag row's drag handler (top left row's corner) and drag row around (vertical axis).</p>
+<h4>Columns</h4>
+<p>Columns are part of the row and they hold your content elements inside them. Columns can be reordered. Click and drag column around (horizontal axis). That way you can group elements in logical groups and then drag them around with your mouse (to re-position).</p>
+<h4>Content elements</h4>
+<p><img src="img/content_elements.png"></p>
+<p>This is a list of available content elements that can be placed on the working canvas or inside of the columns. Think of them as bricks. With those bricks you are building your layout. Most of the content elements have options, to set them click pencil icon. To save changes click save button.</p>
+
+<h4>Content elements</h4>
+<h5>Row</h5>
+<p>You can access options of the row by clicking pencil icon on the right.</p>
+<p>Full width - set this option to Yes, if you want full width row. Useful for slider or parallax.</p>
+
+<h5>Message box</h5>
+<p><img src="img/message-box.png"></p>
+
+<h5>F.A.Q.</h5>
+<p><img src="img/faq.png"></p>
+
+<h5>Tabs</h5>
+<p><img src="img/tabs.png"></p>
+
+<h5>Accordion</h5>
+<p><img src="img/accordion.png"></p>
+
+<h5>Posts slider</h5>
+<p>Slider types:</p>
+<p>Flexslider</p>
+<p><img src="img/flexslider.png"></p>
+<p>Sly slider</p>
+<p><img src="img/sly-slider.png"></p>
+<p>Refine slider</p>
+<p><img src="img/refine-slider.png"></p>
+<p>Parallax slider</p>
+<p><img src="img/parallax-slider.png"></p>
+
+<h5>Button</h5>
+<p><img src="img/buttons.png"></p>
+
+<h5>Progressbar</h5>
+<p><img src="img/progressbar.png"></p>
+
+<h5>Contact form 7</h5>
+<p><img src="img/contact-form.png"></p>
+
+<h5>WP Recent posts</h5>
+<p><img src="img/recent-posts.png"></p>
+
+<h5>Icon box</h5>
+<p>Type: Icon on left</p>
+<p><img src="img/icon-box-left.png"></p>
+<p>Type: Icon on top</p>
+<p><img src="img/icon-box-top.png"></p>
+
+<h5>Spacer</h5>
+<p>Use this for adding vertical space.</p>
+
+<h5>Testimonial</h5>
+<p>Type: with image</p>
+<p><img src="img/testimonial-with-image.png"></p>
+<p>Type: without image</p>
+<p><img src="img/testimonial-without-image.png"></p>
+
+<h5>Image boxes</h5>
+<p><img src="img/image-boxes.png"></p>
+
+<h5>Parallax</h5>
+<p><img src="img/parallax.png"></p>
+
+<h5>Hero unit</h5>
+<p><img src="img/hero.png"></p>
+
+<h5>Team member</h5>
+<p><img src="img/team-member.png"></p>
+<p>If you want to use this element, you need to have al least 1 team member added in <a href="#team">Team</a> menu.</p>
+
+<h5>Clients</h5>
+<p><img src="img/clients.png"></p>
+
+<h5>Last portfolio posts</h5>
+<p><img src="img/last-portfolio-posts.png"></p>
+
+<h5>Portfolio</h5>
+<p><img src="img/portfolio.png"></p>
+
+<h5>Social icons</h5>
+<p><img src="img/social-icons.png"></p>
+
+<h5>Pricing table</h5>
+<p><img src="img/pricing-table.png"></p>
+
+<a href="#top"><div class="back-to-top t2"><span>Back to Top</span></div></a>
+
+<h2 id="html-features">HTML Features</h2>
+<p>If you want to use html features, in post/page edit screen select "Text" tab and insert your code.</p>
+ 
+<h3><a name="components">Components</a></h3>
+
+<p>
+Buttons, Tables
+</p>
+
+<p>
+<strong>Button</strong>
+</p>
+<!-- Button - Code -->
+<div style="background: #f0f3f3; overflow:auto;width:auto;color:black;background:white;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4
+5</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #0099FF; font-style: italic">&lt;!-- Button --&gt;</span>
+<span style="color: #330099; font-weight: bold">&lt;button</span> <span style="color: #330099">class=</span><span style="color: #CC3300">&quot;btn&quot;</span><span style="color: #330099; font-weight: bold">&gt;</span>Button<span style="color: #330099; font-weight: bold">&lt;/button&gt;</span>
+
+<span style="color: #0099FF; font-style: italic">&lt;!-- Button with Icon --&gt;</span>
+<span style="color: #330099; font-weight: bold">&lt;button</span> <span style="color: #330099">class=</span><span style="color: #CC3300">&quot;btn&quot;</span><span style="color: #330099; font-weight: bold">&gt;&lt;i</span> <span style="color: #330099">class=</span><span style="color: #CC3300">&quot;fa fa-check&quot;</span><span style="color: #330099; font-weight: bold">&gt;&lt;/i&gt;</span> Button<span style="color: #330099; font-weight: bold">&lt;/button&gt;</span>
+</pre></td></tr></table></div>
+<!-- Button - Code - End -->
+
+<strong>Table</strong>
+</p>
+<!-- Table - Code -->
+<div style="background: #f0f3f3; overflow:auto;width:auto;color:black;background:white;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #330099; font-weight: bold">&lt;table</span> <span style="color: #330099">class=</span><span style="color: #CC3300">&quot;table table-bordered&quot;</span><span style="color: #330099; font-weight: bold">&gt;</span>
+  <span style="color: #330099; font-weight: bold">&lt;thead&gt;</span>
+    <span style="color: #330099; font-weight: bold">&lt;tr&gt;</span>
+      <span style="color: #330099; font-weight: bold">&lt;th&gt;</span>Head 01<span style="color: #330099; font-weight: bold">&lt;/th&gt;</span>
+      <span style="color: #330099; font-weight: bold">&lt;th&gt;</span>Head 01<span style="color: #330099; font-weight: bold">&lt;/th&gt;</span>
+      <span style="color: #330099; font-weight: bold">&lt;th&gt;</span>Head 01<span style="color: #330099; font-weight: bold">&lt;/th&gt;</span>
+    <span style="color: #330099; font-weight: bold">&lt;/tr&gt;</span>
+  <span style="color: #330099; font-weight: bold">&lt;/thead&gt;</span>
+  <span style="color: #330099; font-weight: bold">&lt;tbody&gt;</span>
+    <span style="color: #330099; font-weight: bold">&lt;tr&gt;</span>
+      <span style="color: #330099; font-weight: bold">&lt;td&gt;</span>Data 01<span style="color: #330099; font-weight: bold">&lt;/td&gt;</span>
+      <span style="color: #330099; font-weight: bold">&lt;td&gt;</span>Data 01<span style="color: #330099; font-weight: bold">&lt;/td&gt;</span>
+      <span style="color: #330099; font-weight: bold">&lt;td&gt;</span>Data 01<span style="color: #330099; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #330099; font-weight: bold">&lt;/tr&gt;</span>  
+    <span style="color: #330099; font-weight: bold">&lt;tr&gt;</span>
+      <span style="color: #330099; font-weight: bold">&lt;td&gt;</span>Data 02<span style="color: #330099; font-weight: bold">&lt;/td&gt;</span>
+      <span style="color: #330099; font-weight: bold">&lt;td&gt;</span>Data 02<span style="color: #330099; font-weight: bold">&lt;/td&gt;</span>
+      <span style="color: #330099; font-weight: bold">&lt;td&gt;</span>Data 02<span style="color: #330099; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #330099; font-weight: bold">&lt;/tr&gt;</span>  
+    <span style="color: #330099; font-weight: bold">&lt;tr&gt;</span>
+      <span style="color: #330099; font-weight: bold">&lt;td&gt;</span>Data 03<span style="color: #330099; font-weight: bold">&lt;/td&gt;</span>
+      <span style="color: #330099; font-weight: bold">&lt;td&gt;</span>Data 03<span style="color: #330099; font-weight: bold">&lt;/td&gt;</span>
+      <span style="color: #330099; font-weight: bold">&lt;td&gt;</span>Data 03<span style="color: #330099; font-weight: bold">&lt;/td&gt;</span>
+    <span style="color: #330099; font-weight: bold">&lt;/tr&gt;</span>  
+  <span style="color: #330099; font-weight: bold">&lt;/tbody&gt;</span>
+<span style="color: #330099; font-weight: bold">&lt;/table&gt;</span>
+</pre></td></tr></table></div>
+<!-- Table - Code - End -->
+
+<p>
+Font Awesome is 100% scalable icon pack.
+<br><br>
+Example markup for an icon:
+</p>
+<!-- Icon - Code -->
+<div style="background: #f0f3f3; overflow:auto;width:auto;color:black;background:white;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1</pre></td><td><pre style="margin: 0; line-height: 125%"> <span style="color: #330099; font-weight: bold">&lt;i</span> <span style="color: #330099">class=</span><span style="color: #CC3300">&quot;fa fa-facebook&quot;</span><span style="color: #330099; font-weight: bold">&gt;&lt;/i&gt;</span>
+</pre></td></tr></table></div>
+<!-- Icon - Code - End -->
+
+
+<hr>
+<a href="#top"><div class="back-to-top"><span>Back to Top</span></div></a>
+<div class="empty-space"></div>
+  
+<h2><a name="css-files-and-structure">CSS Files and Structure</a></h2>
+<hr>
+<p>
+This template comes with these CSS files:
+<br><br>
+css/bootstrap.min.css<br>
+css/flexslider.css<br>
+css/nivo-slider.css<br>
+css/prettyPhoto.css<br>
+css/font-awesome.min.css<br>
+css/refineslide.css<br>
+css/animate.css<br>
+css/jquery.mCustomScrollbar.css<br>
+css/style.css<br>
+css/style-dark.css<br>
+css/colors/blue.css<br>
+css/colors/dark-blue.css<br>
+css/colors/green.css<br>
+css/colors/olive.css<br>
+css/colors/orange.css<br>
+css/colors/orange-light.css<br>
+css/colors/violet.css<br>
+css/colors/yellow.css<br>
+css/bootstrap-override.css<br>
+nivo-themes css files 4
+</p>
+About each file:
+<p>
+<strong>css/bootstrap.min.css</strong>  <br>
+Twitter bootstrap framework. A base twitter bootstrap CSS files, which defines various elements like  columns, navigation, tabs, icons, forms and buttons.  
+<br><br>
+<strong>css/jquery.mCustomScrollbar.css</strong><br>
+Custom Scrollbar stylesheet file.
+<br><br>
+<strong>css/flexslider.css</strong><br>
+Flex Slider stylesheet file.
+<br><br>
+<strong>css/nivo-slider.css</strong><br>
+Nivo slider stylesheet file.
+<br><br>
+<strong>css/prettyPhoto.css</strong><br>
+Prettyphoto stylesheet file.
+<br><br>
+<strong>css/animate.css - http://daneden.me/animate/</strong><br>
+CSS3 animation style sheet .
+<br><br>
+<strong>css/refineslide.css</strong><br>
+Refine slider stylesheet file.
+<br><br>
+<strong>css/font-awesome.min.css (+ font-files)</strong> <br>
+This file includes custom font which is being used for all icons which you can see in this template. More information about Font Awesome 100% scalable icon pack can be found at <a href="http://fortawesome.github.com/Font-Awesome">http://fortawesome.github.com/Font-Awesome</a>. 
+<br><br>
+<strong>css/blue.css</strong><br>
+color style
+<br><br>
+<strong>css/style.css or css/style-dark.css<br></strong><br>
+Main RENO theme stylesheet file (uncompressed version). To make any changes to this template, you should only need to modify this file.
+<br><br> 
+<strong>css/bootstrap-override.css</strong>  <br>
+This file is not an official part of twitter bootstrap, it contains few overrides of media queries of original theme.
+<br><br>
+
+<hr>
+<a href="#top"><div class="back-to-top t2"><span>Back to Top</span></div></a>
+  
+<h2><a name="javascript-plugins-and-scripts">JavaScript Plugins and Scripts</a></h2>
+<hr>
+<p>
+This template comes with these Javascript files:
+</p>
+<strong>jquery.js</strong>
+<br>jQuery is a Javascript library that greatly reduces the amount of code that you must write.
+<br><br>
+<strong>bootstrap.min.js</strong>
+<br>Twitter bootstrap base JavaScript file, which allows us to use many javascript components like tabs, accordion menus, dropdowns, tooltips and popovers, alert messages and so on. More information and examples can be found at http://twitter.github.com/bootstrap/javascript.html
+<br><br>
+<strong>animate.js</strong>
+<br>for animate css
+<br><br>
+<strong>jquery.flexslider-min.js</strong>
+<br>FlexSlider 2 JavaScript file.
+<br><br>
+<strong>jquery.nivo.slider.pack.js</strong>
+<br>Nivo slider JavaScript file.
+<br><br>
+<strong>jquery.prettyPhoto.js</strong>
+<br>LightBox like plugin for image galleries.
+<br><br>
+<strong>jquery.isotope.min.js</strong>
+<br>A dynamic layout plugin for jQuery. The flip-side of CSS floats.
+<br><br>
+<strong>jquery.fitvids.js</strong>
+<br>A lightweight, easy-to-use jQuery plugin for fluid width video embeds. 
+<br><br>
+<strong>jquery.easing.js</strong>
+<br>Uses the built in easing capabilities added In jQuery 1.1 to offer multiple easing options 
+<br><br>
+<strong>jquery.mCustomScrollbar.concat.min.js</strong>
+<br>custom scrollbar 
+<br><br>
+<strong>jquery.parallax-1.1.3.js</strong>
+<br>Parallax 
+<br><br>
+<strong>jquery.refineslide.js</strong>
+<br>Refine slider 
+<br><br>
+<strong>selectnav.js</strong>
+<br>mobile menu plugin 
+<br><br>
+<strong>respond.min.js</strong>
+<br>media queries for i8 and less 
+<br><br>
+<strong>retina.js</strong>
+<br>for retina images 
+<br><br>
+<strong>functions.js</strong>
+<br>The most important file of RENO theme, which defines some basic javascript functions. More information inside JS file. 
+<br><br>
+
+<hr>
+<a href="#top"><div class="back-to-top t2"><span>Back to Top</span></div></a>
+<h2><a name="sources-and-credits">Sources and Credits</a></h2>
+<hr>
+<p>
+<strong>Fonts, Icons, Photos and Source Files</strong>
+<br><br>
+We've used the following files.
+<br><br>
+<h4>Included Libraries</h4>
+<strong>jQuery</strong> - <a href="http://jquery.com" rel="external">http://jquery.com</a><br>
+<strong>Twitter Bootstrap</strong> - <a href="http://getbootstrap.com" rel="external">http://getbootstrap.com</a><br>
+<strong>jQuery Isotope</strong> - <a href="http://isotope.metafizzy.co" rel="external">http://isotope.metafizzy.co</a><br>
+<strong>jQuery FlexSlider 2</strong> - <a href="http://flexslider.woothemes.com" rel="external">http://flexslider.woothemes.com</a><br>
+<strong>jQuery Nivo slider</strong> - <a href="http://dev7studios.com/nivo-slider" rel="external">http://dev7studios.com/nivo-slider</a><br>
+<strong>Select navigation for mobile</strong> - <a href="https://github.com/lukaszfiszer/selectnav.js" rel="external">https://github.com/lukaszfiszer/selectnav.js</a><br>
+<strong>jQuery Fitvids</strong> - <a href="http://fitvidsjs.com" rel="external">http://fitvidsjs.com</a><br>
+<strong>jQuery Easing</strong> - <a href="http://gsgd.co.uk/sandbox/jquery/easing" rel="external">http://gsgd.co.uk/sandbox/jquery/easing</a><br>
+<strong>jQuery Parallax</strong> - <a href="http://www.ianlunn.co.uk/plugins/jquery-parallax" rel="external">http://www.ianlunn.co.uk/plugins/jquery-parallax</a><br>
+<strong>jquery appear </strong> - <a href="https://github.com/bas2k/jquery.appear" rel="external">https://github.com/bas2k/jquery.appear</a><br>
+<strong>jQuery Owl carousel</strong> - <a href="http://www.owlgraphic.com/owlcarousel" rel="external">jQuery OwlCarousel v1.19</a><br>
+<strong>jQuery RefineSlide plugin v0.4.1</strong> - <a href="http://responsivedesign.is/resources/images/refine-slide" rel="external">http://responsivedesign.is/resources/images/refine-slide</a><br>
+<strong>Retina</strong> - <a href="http://retinajs.com" rel="external">http://retinajs.com</a><br>
+<strong>Respond</strong> - <a href="https://github.com/scottjehl/Respond" rel="external">https://github.com/scottjehl/Respond</a><br>
+<strong>Animate js /css</strong> - <a href="http://daneden.me/animate" rel="external">http://daneden.me/animate</a><br>
+<strong>jquery.nicescroll 3.0.0</strong> - <a href="http://areaaperta.com/nicescroll" rel="external">http://areaaperta.com/nicescroll</a><br>
+<strong>meanmenu.2.0.min.js</strong> - <a href="https://github.com/weare2ndfloor/meanMenu" rel="external">https://github.com/weare2ndfloor/meanMenu</a><br>
+<strong>Sly slider js</strong> - <a href="https://github.com/Darsain/sly" rel="external">https://github.com/Darsain/sly</a><br>
+<strong>Revolution slider</strong> - <a href="http://www.themepunch.com/codecanyon/revolution" rel="external">http://www.themepunch.com/codecanyon/revolution</a><br>
+<strong>Magnific Popup - v0.9.5</strong> - <a href="http://dimsemenov.com/plugins/magnific-popup" rel="external">http://dimsemenov.com/plugins/magnific-popup</a><br>
+<strong>custom scroolbar</strong> - <a href="http://manos.malihu.gr/jquery-custom-content-scroller" rel="external">http://manos.malihu.gr/jquery-custom-content-scroller</a><br>
+</p>
+<br>
+<h4>Used Fonts</h4>
+<p>
+<a href="http://www.google.com/fonts#UsePlace:use/Collection:Open+Sans" rel="external">Google Web Fonts – Open Sans</a><br>
+<a href="http://www.google.com/fonts#UsePlace:use/Collection:Fauna+One" rel="external">Google Web Fonts – Fauna One</a><br>
+</p>
+<br>
+<h4>Included Icons</h4>
+<p>
+<strong>Font Awesome</strong> - <a href="http://fortawesome.github.com/Font-Awesome" rel="external">http://fortawesome.github.com/Font-Awesome</a><br>
+</p> 
+<br>
+<h4>Included Photoshop File</h4>
+<p>
+<strong>Layered Photoshop PSD file of Home</strong>
+</p> 
+<br>
+
+<h4>Used Photos in Demo</h4>
+<p>
+<a href="http://www.flickr.com/photos/fiddleoak" rel="external">http://www.flickr.com/photos/fiddleoak</a><br>
+<a href="http://www.flickr.com/photos/astragony" rel="external">http://www.flickr.com/photos/astragony</a><br>
+<a href="http://www.flickr.com/photos/anieto2k" rel="external">http://www.flickr.com/photos/anieto2k</a><br>
+<a href="http://www.flickr.com/photos/markjsebastian" rel="external">http://www.flickr.com/photos/markjsebastian</a><br>
+<br>
+Images are not included in template
+</p>
+
+<br>
+<p>
+Thank you for purchasing RENO theme. In case of any questions related to this template, we will to get back to you as soon as we can. We do not provide any warranty, however we are always here to help.
+<br><br>
+Best regards
+<br>
+entiri s.r.o.
+</p> 
+
+<hr>
+<a href="#top"><div class="back-to-top t2"><span>Back to Top</span></div></a>
+<h2><a name="changelog">Changelog</a></h2>
+<hr>
+<p>
+<strong>v1.1 - 04 March 2014</strong><br>
+- added Woocommerce 2.1 support<br>
+- added header info bar<br>
+- added multiple portfolio support<br>
+- added more options to portfolio<br>
+- added UberMenu support and 3rd level menu<br>
+- minor css fixes<br>
+</p>  
+<p>
+<strong>v1.0 - 13 Februar 2014</strong><br>
+- initial version
+</p>  
+
+<hr>
+<a href="#top"><div class="back-to-top t2"><span>Back to Top</span></div></a>
+  <h2 class="bottom-text">Thank You Very Much</h2>
+  <br><br>
+  <hr>
+  <div id="copyright">
+    &copy; 2014 <a href="http://www.entiri.com" rel="external" alt="entiri s.r.o.">entiri</a>
+  </div>
+  
+</div>
+
+</body>
+</html>

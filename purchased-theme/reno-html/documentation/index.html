@@ -1,0 +1,1150 @@
+<!doctype html>  
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	
+	<title>RENO - responsive HTML5 + CSS3 template</title>
+	
+	<meta name="description" content="Thank you for purchasing RENO template.">
+	<meta name="author" content="entiri s.r.o.">
+	<meta name="copyright" content="entiri s.r.o.">
+	<meta name="generator" content="pspad">
+	<meta name="date" content="2013-10-15">
+	
+	<link rel="stylesheet" href="styles.css" media="all">
+  <link href="img/favicon.png" rel="icon" type="image/png"> 
+
+  <script type="text/javascript">
+    function externalLinks() {
+     if (!document.getElementsByTagName) return;
+     var anchors = document.getElementsByTagName("a");
+     for (var i=0; i<anchors.length; i++) {
+       var anchor = anchors[i];
+       if (anchor.getAttribute("href") &&
+           anchor.getAttribute("rel") == "external")
+         anchor.target = "_blank";
+     }
+    }
+    window.onload = externalLinks;  
+  </script>
+</head>
+<body>
+<div id="container">
+    
+  <h1><a name="top"></a>RENO</h1>
+  
+  <h2>Responsive HTML5 + CSS3 Template</h2>
+
+
+  <hr>
+  
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#html-files-and-structure">HTML Files and Structure</a>
+      <ul>
+        <li><a href="#about-reno">About RENO template</a></li>
+        <li><a href="#basic-structure">Basic Structure</a></li>
+        <li><a href="#columns">Columns</a></li>
+        <li><a href="#container-element">Container</a></li>
+        <li><a href="#grid-system">Grid System</a></li>
+        <li><a href="#header">Header</a></li>
+        <li><a href="#navigation">Navigation</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#shortcodes">Shortcodes</a></li>  
+      </ul>
+    </li>
+    <li><a href="#css-files-and-structure">CSS Files and Structure</a></li>
+    <li><a href="#javascript-plugins-and-scripts">JavaScript Plugins and Scripts</a></li>
+    <li><a href="#sources-and-credits">Sources and Credits</a></li>
+    <li><a href="#changelog">Changelog</a></li>
+  </ul>
+  <hr>
+  <div class="empty-space"></div>
+
+<!-- Introduction --> 
+<h2><a name="introduction">Introduction</a></h2>
+<hr>
+Created: 15/10/2013<br>
+Latest Update: 12/12/2013<br>
+By: entiri s.r.o. <br>
+E-mail: <a href="mailto:support@entiri.com" rel="external">support@entiri.com</a><br>
+<br>
+Thank you for purchasing RENO template.
+<hr>
+<a href="#top"><div class="back-to-top"><span>Back to Top</span></div></a>
+
+<!-- HTML Files and Structure --> 
+<h2><a name="html-files-and-structure">HTML Files and Structure</a></h2>
+<h3><a name="about-reno">About RENO template</a></h3>
+<p>
+<strong>RENO</strong> is Multipurpose HTML5 template suitable for companies or individuals that want to present their work at the highest level. It is based on Twitter Bootstrap framework.
+This template uses the latest HTML5 and CSS3 technologies.<br>
+<strong>To change colors</strong> just <strong>change color-1.css</strong> file in "<strong>header tag</strong>" for <strong>the color you would like to use (color-2.css,... up to color-8.css)</strong>.<br />
+</p>  
+
+<h3><a name="basic-structure">Basic Structure</a></h3>
+
+<p>  
+All the pages have been divided into three vertical sections #header, #content and #footer as show on this simplified HTML code:
+</p>
+
+<!-- Structure - Code -->
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #228B22">&lt;!-- Header --&gt;</span> 
+  <span style="color: #8B008B; font-weight: bold">&lt;header</span> <span style="color: #658b00">id=</span><span style="color: #CD5555">&quot;header&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+    { HEADER CONTENT }
+  <span style="color: #8B008B; font-weight: bold">&lt;/header&gt;</span>  
+<span style="color: #228B22">&lt;!-- Header End --&gt;</span> 
+    
+<span style="color: #228B22">&lt;!-- Content --&gt;</span>
+  <span style="color: #8B008B; font-weight: bold">&lt;section</span> <span style="color: #658b00">id=</span><span style="color: #CD5555">&quot;section&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;container&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+      <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;row&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+        { SITE CONTENT }
+      <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>   
+    <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span> 
+  <span style="color: #8B008B; font-weight: bold">&lt;/section&gt;</span>  
+<span style="color: #228B22">&lt;!-- Content End --&gt;</span> 
+    
+<span style="color: #228B22">&lt;!-- Footer --&gt;</span>
+  <span style="color: #8B008B; font-weight: bold">&lt;footer</span> <span style="color: #658b00">id=</span><span style="color: #CD5555">&quot;footer&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;container&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+      <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;row&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+        { FOOTER CONTENT }
+      <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>   
+    <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span> 
+  <span style="color: #8B008B; font-weight: bold">&lt;/footer&gt;</span>  
+<span style="color: #228B22">&lt;!-- Footer End --&gt;</span> 
+</pre></td></tr></table></div>
+<!-- Structure - Code - End -->
+
+<a href="#top"><div class="back-to-top t2"><span>Back to Top</span></div></a>
+
+<h3><a name="columns">Columns</a></h3>
+
+<p>
+Template is divided into rows and columns, with respective classes .row and .col-md-* (col-lg-*, col-sm-*, col-xs-*), where rows divide horizontal parts of the page and columns divide each row into smaller vertical sections. Since this template is based on 12-column grid system, you can divide each row into various number of vertical sections as long as they sum up at twelve (12). Look at the examples below for better explanation and some real examples.
+</p>
+
+
+<p>
+<strong>Full-width:</strong> To achieve a full-width column, use the code below:
+</p>
+
+<!-- Full-width - Code -->
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4
+5</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;row&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+  <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;col-md-12&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+    { CONTENT 1 }
+  <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+</pre></td></tr></table></div>
+<!-- Full-width - Code - End -->
+<br>
+
+<p>
+<strong>3 equal columns</strong> (1/3 + 1/3 + 1/3 layout):
+</p>
+
+<!-- 3 equal columns - Code -->
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;row&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+  <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;col-md-4&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+    { CONTENT 1 }
+  <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+  <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;col-md-4&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+    { CONTENT 2 }
+  <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+  <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;col-md-4&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+    { CONTENT 3 }
+  <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+</pre></td></tr></table></div>
+
+
+<!-- 3 equal columns - Code - End -->
+<br>
+
+<p>
+<strong>4 equal columns</strong> (1/4 + 1/4 + 1/4 layout):
+</p>
+
+<!-- 4 equal columns - Code --><!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;row&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+  <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;col-md-3&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+    { CONTENT 1 }
+  <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+  <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;col-md-3&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+    { CONTENT 2 }
+  <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+  <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;col-md-3&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+    { CONTENT 3 }
+  <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+  <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;col-md-3&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+    { CONTENT 4 }
+  <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+</pre></td></tr></table></div>
+
+<!-- 4 equal columns - Code - End -->
+<br>
+
+<p>
+<strong>2 columns with different width</strong> (3/4 + 1/4 layout)
+</p>
+
+<!-- 2 columns with different width - Code -->
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;row&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+  <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;col-md-9&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+    { CONTENT 1 }
+  <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+  <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;col-md-3&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+    { CONTENT 2 }
+  <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+</pre></td></tr></table></div>
+
+<!-- 2 columns with different width - End -->
+
+<a href="#top"><div class="back-to-top t2"><span>Back to Top</span></div></a>
+
+<h3><a name="container-element">Container</a></h3>
+
+<p>
+There's one more special class which is being used across all HTML files, which is .container. This class determines the maximum width of a page and also makes sure that page is center-aligned. It also determines rendering of a template on mobile devices and tablets. This class can have also different backgrounds.
+</p>
+
+<a href="#top"><div class="back-to-top t2"><span>Back to Top</span></div></a>
+
+<h3><a name="grid-system">Grid System</a></h3>
+
+<p>
+For more information about layout and grid system, you can reffer to exhaustive documentation on all elements at <a href="http://getbootstrap.com/css" rel="external">http://getbootstrap.com/css</a>
+</p>
+
+<a href="#top"><div class="back-to-top t2"><span>Back to Top</span></div></a>
+
+  <h3><a name="header">Header</a></h3>
+
+<p>
+Example of Header Structure:
+</p>
+
+<!-- Header - Code -->
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #228B22">&lt;!-- Header --&gt;</span>
+<span style="color: #8B008B; font-weight: bold">&lt;header</span> <span style="color: #658b00">id=</span><span style="color: #CD5555">&quot;home&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>    
+  <span style="color: #8B008B; font-weight: bold">&lt;nav</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;navbar navbar-fixed-top&quot;</span> <span style="color: #658b00">role=</span><span style="color: #CD5555">&quot;navigation&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+		  <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;navbar-inner&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+				<span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;container&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+          <span style="color: #228B22">&lt;!-- logo with back to top --&gt;</span>                       
+					 <span style="color: #8B008B; font-weight: bold">&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;#&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;Home&quot;</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;back-to-top&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;img</span> <span style="color: #658b00">src=</span><span style="color: #CD5555">&quot;img/logo.png &quot;</span> <span style="color: #658b00">alt=</span><span style="color: #CD5555">&quot;logo&quot;</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;logo&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/a&gt;</span>         
+            <span style="color: #228B22">&lt;!-- Menu --&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;ul</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;nav&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;li</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;active&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;index.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Home /<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu --&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;ul&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;index-2.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Home 2 - Parallax<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;index-3.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Home 3 - Sly Slider<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;index-4.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Home 4 - Flex Slider<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;index-5.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Home 5 - Video<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;/ul&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu End --&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;/li&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;shop.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Shop /<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu --&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;ul&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;product-detail.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Product Detail<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;shop-left.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Shop - Left Sidebar<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;shop-right.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Shop - Right Sidebar<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;checkout.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Checkout<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;/ul&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu End --&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;/li&gt;</span>  
+              <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;portfolio.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Portfolio /<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu --&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;ul&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;portfolio-detail.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Portfolio Detail<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;portfolio-2.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Portfolio 2 - 2 Columns<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;portfolio-3.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Portfolio 3 - 3 Columns<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;portfolio-4.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Portfolio 4 - 4 Columns<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;/ul&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu End --&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;/li&gt;</span> 
+              <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;blog.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Blog /<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu --&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;ul&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;blog-left.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Blog Detail - Left Sidebar<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;blog-right.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Blog Detail - Right Sidebar<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;blog-full.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Blog Detail - Full Width<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;/ul&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu End --&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;/li&gt;</span>  
+              <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;services.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Pages /<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu --&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;ul&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;services.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Services<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;about-us.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>About Us<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;pricing-tables.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Pricing Tables<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;404.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>404 Error<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;/ul&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu End --&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;/li&gt;</span>      
+              <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;components.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Features /<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu --&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;ul&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;components.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Components<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;sliders.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Sliders<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;typography.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Typography<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;icons.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Awesome Icons<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+    							<span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;grid.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Grid System<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;/ul&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu End --&gt;</span>                  
+              <span style="color: #8B008B; font-weight: bold">&lt;/li&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;contact.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Contact /<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span> 
+            <span style="color: #8B008B; font-weight: bold">&lt;/ul&gt;</span>
+            <span style="color: #228B22">&lt;!-- Menu End --&gt;</span>           					
+			<span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+	<span style="color: #8B008B; font-weight: bold">&lt;/nav&gt;</span>
+<span style="color: #8B008B; font-weight: bold">&lt;/header&gt;</span>
+<span style="color: #228B22">&lt;!-- header ends --&gt;</span>
+</pre></div>
+
+
+<!-- Header Code - End -->
+
+<a href="#top"><div class="back-to-top t2"><span>Back to Top</span></div></a>
+
+  <h3><a name="navigation">Navigation</a></h3>
+
+<p>
+Example of Navigation:
+</p>
+
+<!--  Navigation - Code -->
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">  <span style="color: #8B008B; font-weight: bold">&lt;nav</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;navbar navbar-fixed-top&quot;</span> <span style="color: #658b00">role=</span><span style="color: #CD5555">&quot;navigation&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;navbar-inner&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+				<span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;container&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+          <span style="color: #228B22">&lt;!-- logo with back to top --&gt;</span>                       
+					 <span style="color: #8B008B; font-weight: bold">&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;#&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;Home&quot;</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;back-to-top&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;img</span> <span style="color: #658b00">src=</span><span style="color: #CD5555">&quot;img/logo.png &quot;</span> <span style="color: #658b00">alt=</span><span style="color: #CD5555">&quot;logo&quot;</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;logo&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/a&gt;</span>         
+            <span style="color: #228B22">&lt;!-- Menu --&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;ul</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;nav&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;li</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;active&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;index.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Home /<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu --&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;ul&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;index-2.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Home 2 - Parallax<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;index-3.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Home 3 - Sly Slider<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;index-4.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Home 4 - Flex Slider<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;index-5.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Home 5 - Video<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;/ul&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu End --&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;/li&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;shop.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Shop /<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu --&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;ul&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;product-detail.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Product Detail<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;shop-left.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Shop - Left Sidebar<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;shop-right.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Shop - Right Sidebar<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;checkout.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Checkout<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;/ul&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu End --&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;/li&gt;</span>  
+              <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;portfolio.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Portfolio /<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu --&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;ul&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;portfolio-detail.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Portfolio Detail<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;portfolio-2.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Portfolio 2 - 2 Columns<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;portfolio-3.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Portfolio 3 - 3 Columns<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;portfolio-4.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Portfolio 4 - 4 Columns<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;/ul&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu End --&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;/li&gt;</span> 
+              <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;blog.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Blog /<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu --&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;ul&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;blog-left.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Blog Detail - Left Sidebar<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;blog-right.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Blog Detail - Right Sidebar<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;blog-full.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Blog Detail - Full Width<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;/ul&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu End --&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;/li&gt;</span>  
+              <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;services.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Pages /<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu --&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;ul&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;services.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Services<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;about-us.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>About Us<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;pricing-tables.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Pricing Tables<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;404.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>404 Error<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;/ul&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu End --&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;/li&gt;</span>      
+              <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;components.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Features /<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu --&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;ul&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;components.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Components<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;sliders.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Sliders<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;typography.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Typography<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+                  <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;icons.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Awesome Icons<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+    							<span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;grid.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Grid System<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+    						<span style="color: #8B008B; font-weight: bold">&lt;/ul&gt;</span>
+                <span style="color: #228B22">&lt;!-- Submenu End --&gt;</span>                  
+              <span style="color: #8B008B; font-weight: bold">&lt;/li&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;contact.html&quot;</span> <span style="color: #658b00">title=</span><span style="color: #CD5555">&quot;&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Contact /<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span> 
+            <span style="color: #8B008B; font-weight: bold">&lt;/ul&gt;</span>
+            <span style="color: #228B22">&lt;!-- Menu End --&gt;</span>           					
+			<span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+	<span style="color: #8B008B; font-weight: bold">&lt;/nav&gt;</span>
+</pre></div>
+
+
+<!-- Navigation - Code - End -->
+
+<p>
+<strong>How to make Navigation Item selected?</strong><br>
+To make Navigation Item active (selected), add .active class to it's <strong>&lt;li&gt;</strong> parent container. 
+</p>
+
+<a href="#top"><div class="back-to-top t2"><span>Back to Top</span></div></a>
+
+  <h3><a name="blog">Blog</a></h3>
+
+<p>
+Example of Blog:
+</p>
+
+<!-- Blog - Code -->
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">        <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;blog-container&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span> <span style="color: #228B22">&lt;!-- blog container --&gt;</span>        
+          <span style="color: #8B008B; font-weight: bold">&lt;img</span> <span style="color: #658b00">src=</span><span style="color: #CD5555">&quot;img/blog/3-big.jpg&quot;</span> <span style="color: #658b00">alt=</span><span style="color: #CD5555">&quot;alt&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>     
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;blog-title-2&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>        
+            <span style="color: #8B008B; font-weight: bold">&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-picture icon-2x&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;</span> 
+            <span style="color: #8B008B; font-weight: bold">&lt;h3&gt;</span>Image post<span style="color: #8B008B; font-weight: bold">&lt;span</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;blog-date&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>26.05.203<span style="color: #8B008B; font-weight: bold">&lt;/span&gt;&lt;/h3&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;h5&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;#&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Art<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;</span> / <span style="color: #8B008B; font-weight: bold">&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;#&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Photography<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;</span> / <span style="color: #8B008B; font-weight: bold">&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;#&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Music<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;</span> - By: <span style="color: #8B008B; font-weight: bold">&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;#&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Anthony<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/h5&gt;</span>
+           <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>          
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;blog-text&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;p&gt;</span>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vul.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vul.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+            <span style="color: #8B008B; font-weight: bold">&lt;/p&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;blog-right.html&quot;</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;btn pull-right margin-0&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Read more<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span><span style="color: #228B22">&lt;!-- blog container end --&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;hr</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;medium-line&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+</pre></div>
+
+<!-- Blog - Code - End -->
+<a href="#top"><div class="back-to-top t2"><span>Back to Top</span></div></a>
+
+
+
+  <h3><a name="shortcodes">Shortcodes</a></h3>
+
+<p>
+Client say:
+</p>
+
+<!-- client say -->
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">      <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;col-md-6&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span> 
+        <span style="color: #8B008B; font-weight: bold">&lt;h4&gt;</span>Client Say<span style="color: #8B008B; font-weight: bold">&lt;/h4&gt;</span>        
+        <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;client-says&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>            
+          “Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas. Aliquam at erat in purus aliquet mollis. Fusce elementum velit vel dolor iaculis egestas. posuere vel vitae  elementum velit nibh.”
+        <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;client-says-2&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;client-name&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-user&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;</span> John Doe, Evton Inc.
+          <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>  
+        <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span> 
+      <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+
+
+<!-- client say - End -->
+
+
+
+
+
+<p>
+Services:
+</p>
+
+<!--  Services -->
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">        <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;services-box&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span> <span style="color: #228B22">&lt;!-- services box --&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;services-icon&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-css3 animated&quot;</span> <span style="color: #658b00">data-type=</span><span style="color: #CD5555">&quot;rotateIn&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;</span> <span style="color: #228B22">&lt;!-- services icon --&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;h4&gt;</span>CSS 3<span style="color: #8B008B; font-weight: bold">&lt;/h4&gt;</span> <span style="color: #228B22">&lt;!-- services heading --&gt;</span>         
+          <span style="color: #8B008B; font-weight: bold">&lt;p&gt;</span>Sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas.<span style="color: #8B008B; font-weight: bold">&lt;/p&gt;</span> <span style="color: #228B22">&lt;!-- services text --&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span> <span style="color: #228B22">&lt;!-- services box end --&gt;</span>
+      <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+
+
+<!--  Services End -->
+
+<p>
+Table:
+</p>
+
+<!--  Table -->
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">      <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;col-md-6&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;h4&gt;</span>Regular Table<span style="color: #8B008B; font-weight: bold">&lt;/h4&gt;</span>        
+        <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;table&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;table</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;table table-bordered&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;thead&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;tr&gt;</span>
+                <span style="color: #8B008B; font-weight: bold">&lt;th&gt;</span>Head 01<span style="color: #8B008B; font-weight: bold">&lt;/th&gt;</span>
+                <span style="color: #8B008B; font-weight: bold">&lt;th&gt;</span>Head 02<span style="color: #8B008B; font-weight: bold">&lt;/th&gt;</span>
+                <span style="color: #8B008B; font-weight: bold">&lt;th&gt;</span>Head 03<span style="color: #8B008B; font-weight: bold">&lt;/th&gt;</span>
+                <span style="color: #8B008B; font-weight: bold">&lt;th&gt;</span>Head 04<span style="color: #8B008B; font-weight: bold">&lt;/th&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;/tr&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;/thead&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;tbody&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;tr&gt;</span>
+                <span style="color: #8B008B; font-weight: bold">&lt;td&gt;</span>Data 01<span style="color: #8B008B; font-weight: bold">&lt;/td&gt;</span>
+                <span style="color: #8B008B; font-weight: bold">&lt;td&gt;</span>Data 01<span style="color: #8B008B; font-weight: bold">&lt;/td&gt;</span>
+                <span style="color: #8B008B; font-weight: bold">&lt;td&gt;</span>Data 01<span style="color: #8B008B; font-weight: bold">&lt;/td&gt;</span>
+                <span style="color: #8B008B; font-weight: bold">&lt;td&gt;</span>Data 01<span style="color: #8B008B; font-weight: bold">&lt;/td&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;/tr&gt;</span>  
+              <span style="color: #8B008B; font-weight: bold">&lt;tr&gt;</span>
+                <span style="color: #8B008B; font-weight: bold">&lt;td&gt;</span>Data 02<span style="color: #8B008B; font-weight: bold">&lt;/td&gt;</span>
+                <span style="color: #8B008B; font-weight: bold">&lt;td&gt;</span>Data 02<span style="color: #8B008B; font-weight: bold">&lt;/td&gt;</span>
+                <span style="color: #8B008B; font-weight: bold">&lt;td&gt;</span>Data 02<span style="color: #8B008B; font-weight: bold">&lt;/td&gt;</span>
+                <span style="color: #8B008B; font-weight: bold">&lt;td&gt;</span>Data 02<span style="color: #8B008B; font-weight: bold">&lt;/td&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;/tr&gt;</span>  
+              <span style="color: #8B008B; font-weight: bold">&lt;tr&gt;</span>
+                <span style="color: #8B008B; font-weight: bold">&lt;td&gt;</span>Data 03<span style="color: #8B008B; font-weight: bold">&lt;/td&gt;</span>
+                <span style="color: #8B008B; font-weight: bold">&lt;td&gt;</span>Data 03<span style="color: #8B008B; font-weight: bold">&lt;/td&gt;</span>
+                <span style="color: #8B008B; font-weight: bold">&lt;td&gt;</span>Data 03<span style="color: #8B008B; font-weight: bold">&lt;/td&gt;</span>
+                <span style="color: #8B008B; font-weight: bold">&lt;td&gt;</span>Data 03<span style="color: #8B008B; font-weight: bold">&lt;/td&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;/tr&gt;</span>  
+            <span style="color: #8B008B; font-weight: bold">&lt;/tbody&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;/table&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>          
+      <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+
+<!--  Table End -->
+
+<p>
+List:
+</p>
+
+<!--  List -->
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">      <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;col-md-4&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;ul</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;list-1&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;span</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;box-small&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-angle-right&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;&lt;/span&gt;</span> lorem ipsum lorem<span style="color: #8B008B; font-weight: bold">&lt;/li&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;span</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;box-small&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-angle-right&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;&lt;/span&gt;</span> lorem ipsum lorem ipsum<span style="color: #8B008B; font-weight: bold">&lt;/li&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;span</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;box-small&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-angle-right&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;&lt;/span&gt;</span> lorem ipsum lorem ipsum<span style="color: #8B008B; font-weight: bold">&lt;/li&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;span</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;box-small&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-angle-right&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;&lt;/span&gt;</span> lorem ipsum lorem ipsum<span style="color: #8B008B; font-weight: bold">&lt;/li&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;span</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;box-small &quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-angle-right&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;&lt;/span&gt;</span> lorem ipsum lorem ipsum<span style="color: #8B008B; font-weight: bold">&lt;/li&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;span</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;box-small&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-angle-right&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;&lt;/span&gt;</span> lorem ipsum lorem ipsum<span style="color: #8B008B; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;/ul&gt;</span>
+      <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+
+<!--  List End -->
+
+
+<p>
+Progress Bars:
+</p>
+
+<!--  Progress Bars -->
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">      <span style="color: #228B22">&lt;!-- Progress Bar --&gt;</span>
+      <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;col-md-6 skill-shortcode&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;h4&gt;</span>Progress Bar<span style="color: #8B008B; font-weight: bold">&lt;/h4&gt;</span>           
+        <span style="color: #228B22">&lt;!-- Progress Bar --&gt;</span> 
+        <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;progress&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;bar&quot;</span> <span style="color: #658b00">data-percentage=</span><span style="color: #CD5555">&quot;73&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>HTML/CSS 73%<span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>  
+        <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;progress&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;bar&quot;</span> <span style="color: #658b00">data-percentage=</span><span style="color: #CD5555">&quot;100&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Web Design 100%<span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>  
+        <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;progress&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;bar&quot;</span> <span style="color: #658b00">data-percentage=</span><span style="color: #CD5555">&quot;78&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Photography 78%<span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>  
+        <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;progress&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;bar&quot;</span>  <span style="color: #658b00">data-percentage=</span><span style="color: #CD5555">&quot;80&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Sound Design 80%<span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>  
+        <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;progress&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;bar&quot;</span> <span style="color: #658b00">data-percentage=</span><span style="color: #CD5555">&quot;63&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Party 63%<span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span> 
+        <span style="color: #228B22">&lt;!-- Progress Bar End --&gt;</span>          
+        <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;row spacer10&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/div&gt;</span>                 
+      <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span> 
+      <span style="color: #228B22">&lt;!-- Progress Bar End --&gt;</span>
+</pre></div>
+<!--  Progress Bars End -->
+
+
+<p>
+Accordion
+</p>
+
+<!--  Accordion  -->
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel-group&quot;</span> <span style="color: #658b00">id=</span><span style="color: #CD5555">&quot;accordion&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+  <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel panel-default&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel-heading&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+      <span style="color: #8B008B; font-weight: bold">&lt;h4</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel-title&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;a</span> <span style="color: #658b00">data-toggle=</span><span style="color: #CD5555">&quot;collapse&quot;</span> <span style="color: #658b00">data-parent=</span><span style="color: #CD5555">&quot;#accordion&quot;</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;#collapseOne&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+          Information #1
+        <span style="color: #8B008B; font-weight: bold">&lt;/a&gt;</span>
+      <span style="color: #8B008B; font-weight: bold">&lt;/h4&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">id=</span><span style="color: #CD5555">&quot;collapseOne&quot;</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel-collapse collapse in&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+      <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel-body&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+        { CONTENT 1 }
+      <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+  <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+  <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel panel-default&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel-heading&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+      <span style="color: #8B008B; font-weight: bold">&lt;h4</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel-title&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;a</span> <span style="color: #658b00">data-toggle=</span><span style="color: #CD5555">&quot;collapse&quot;</span> <span style="color: #658b00">data-parent=</span><span style="color: #CD5555">&quot;#accordion&quot;</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;#collapseTwo&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+          Information #2
+        <span style="color: #8B008B; font-weight: bold">&lt;/a&gt;</span>
+      <span style="color: #8B008B; font-weight: bold">&lt;/h4&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">id=</span><span style="color: #CD5555">&quot;collapseTwo&quot;</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel-collapse collapse&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+      <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel-body&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+        { CONTENT 2 }
+      <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+  <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+  <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel panel-default&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel-heading&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+      <span style="color: #8B008B; font-weight: bold">&lt;h4</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel-title&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;a</span> <span style="color: #658b00">data-toggle=</span><span style="color: #CD5555">&quot;collapse&quot;</span> <span style="color: #658b00">data-parent=</span><span style="color: #CD5555">&quot;#accordion&quot;</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;#collapseThree&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+          Information #3
+        <span style="color: #8B008B; font-weight: bold">&lt;/a&gt;</span>
+      <span style="color: #8B008B; font-weight: bold">&lt;/h4&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">id=</span><span style="color: #CD5555">&quot;collapseThree&quot;</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel-collapse collapse&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+      <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel-body&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+        { CONTENT 3 }
+      <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+  <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+  <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel panel-default&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel-heading&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+      <span style="color: #8B008B; font-weight: bold">&lt;h4</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel-title&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;a</span> <span style="color: #658b00">data-toggle=</span><span style="color: #CD5555">&quot;collapse&quot;</span> <span style="color: #658b00">data-parent=</span><span style="color: #CD5555">&quot;#accordion&quot;</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;#collapseFour&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+          Information #4
+        <span style="color: #8B008B; font-weight: bold">&lt;/a&gt;</span>
+      <span style="color: #8B008B; font-weight: bold">&lt;/h4&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">id=</span><span style="color: #CD5555">&quot;collapseFour&quot;</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel-collapse collapse&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+      <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;panel-body&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+        { CONTENT 4 }
+      <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+  <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span> 
+</pre></td></tr></table></div>
+<!--  Accordion  End -->
+
+
+<p>
+Tab
+</p>
+
+<!--  Tab -->
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">      <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;col-md-6&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;h4&gt;</span>Tabs 1<span style="color: #8B008B; font-weight: bold">&lt;/h4&gt;</span>
+        
+        <span style="color: #228B22">&lt;!-- Tabs --&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;tabbable&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;ul</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;nav nav-tabs&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;li</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;active&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;#tab1-1&quot;</span> <span style="color: #658b00">data-toggle=</span><span style="color: #CD5555">&quot;tab&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-pushpin&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;</span>Tab 1<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;#tab1-2&quot;</span> <span style="color: #658b00">data-toggle=</span><span style="color: #CD5555">&quot;tab&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-cloud-download&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;</span>Tab 2<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #658b00">href=</span><span style="color: #CD5555">&quot;#tab1-3&quot;</span> <span style="color: #658b00">data-toggle=</span><span style="color: #CD5555">&quot;tab&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-folder-open&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;</span>Tab 3<span style="color: #8B008B; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;/ul&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;tab-content&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;tab-pane active&quot;</span> <span style="color: #658b00">id=</span><span style="color: #CD5555">&quot;tab1-1&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;h5&gt;</span>I&#39;m in Section 1<span style="color: #8B008B; font-weight: bold">&lt;/h5&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;p&gt;</span>Ut wisi enim ad minim veniam, quis nostrud exeinim veniam, quis nostrud exerci tation ullamcorper susc nostrudexerci tation ullamcoramcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendinim veniam, quis nostrud exerci ta etiam processus dynamicus, and mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc. Parum claram, anteposuerit litterarum formas humanitattion ullamcorper suscipit lobrerit in vul.niam, quis nostrud exerci tation ullamcorper susc nostrudexerci tation ullamcoramcorper suscipit lobor<span style="color: #8B008B; font-weight: bold">&lt;/p&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;tab-pane&quot;</span> <span style="color: #658b00">id=</span><span style="color: #CD5555">&quot;tab1-2&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;h5&gt;</span>I&#39;m in Section 2<span style="color: #8B008B; font-weight: bold">&lt;/h5&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;p&gt;</span>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcinim veniam, quis nostrud exerci tation ullamcorper t lobortis nisl ut alisequat. Duis autem vel einim veniam, quis nostrud exerinim veniam, quis nostrud exerci tation ullamcorper suscipit lobci tation ullamcorper suscipit lobum iriure dolor in hendrerit in vul<span style="color: #8B008B; font-weight: bold">&lt;/p&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;p&gt;</span>Ut wisi enim ad minim veniam, quis nostrud exeinim veniam, quis nostr etiam processus dynamicus, and mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc. Parum claram, anteposuerit litterarum formas humanitatud exerci tation ullamcorper susc nostrudexe.<span style="color: #8B008B; font-weight: bold">&lt;/p&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;tab-pane&quot;</span> <span style="color: #658b00">id=</span><span style="color: #CD5555">&quot;tab1-3&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;h5&gt;</span>I&#39;m in Section 3<span style="color: #8B008B; font-weight: bold">&lt;/h5&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;p&gt;</span>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea coiipit lobmmodo consequat. Duis autem vel eum iriure dolor in hendrerit in vinim veniam, quis nostrud einim veniam, quis nostrud exerci tation ullamcorper suscipit lobxerci tation ullamcorper suscipit lobul<span style="color: #8B008B; font-weight: bold">&lt;/p&gt;</span>
+              <span style="color: #8B008B; font-weight: bold">&lt;p&gt;</span>Gad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea coiipit lobmmodo consequat. Duis autem vel eum iriure dolor in hendrerit in vinim veniam, quis nostrud einim veniam, quis nostrud exer ta etiam processus dynamicus, and mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc. Parum claram, anteposuerit litterarum formas humanitattion ullamcorper suscipit lobul<span style="color: #8B008B; font-weight: bold">&lt;/p&gt;</span>
+            
+            <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #228B22">&lt;!-- Tabs End --&gt;</span>
+
+      <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span> 
+</pre></div>
+<!--  Tab End -->
+
+
+<p>
+Alerts
+</p>
+
+<!--  Alerts -->
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">      <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;col-md-6&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;h4&gt;</span>Alerts<span style="color: #8B008B; font-weight: bold">&lt;/h4&gt;</span>       
+        <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;alert alert-error&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;button</span> <span style="color: #658b00">type=</span><span style="color: #CD5555">&quot;button&quot;</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;close&quot;</span> <span style="color: #658b00">data-dismiss=</span><span style="color: #CD5555">&quot;alert&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>&amp;times;<span style="color: #8B008B; font-weight: bold">&lt;/button&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;strong&gt;</span>Error!<span style="color: #8B008B; font-weight: bold">&lt;/strong&gt;</span> Change a few things up and try submitting again.
+        <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+
+        <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;alert alert-success&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;button</span> <span style="color: #658b00">type=</span><span style="color: #CD5555">&quot;button&quot;</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;close&quot;</span> <span style="color: #658b00">data-dismiss=</span><span style="color: #CD5555">&quot;alert&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>&amp;times;<span style="color: #8B008B; font-weight: bold">&lt;/button&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;strong&gt;</span>Well done!<span style="color: #8B008B; font-weight: bold">&lt;/strong&gt;</span> You successfully read this important alert message.
+        <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+
+        <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;alert alert-info&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;button</span> <span style="color: #658b00">type=</span><span style="color: #CD5555">&quot;button&quot;</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;close&quot;</span> <span style="color: #658b00">data-dismiss=</span><span style="color: #CD5555">&quot;alert&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>&amp;times;<span style="color: #8B008B; font-weight: bold">&lt;/button&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;strong&gt;</span>Heads up!<span style="color: #8B008B; font-weight: bold">&lt;/strong&gt;</span> This alert needs your attention.
+        <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+
+        <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;alert&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;button</span> <span style="color: #658b00">type=</span><span style="color: #CD5555">&quot;button&quot;</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;close&quot;</span> <span style="color: #658b00">data-dismiss=</span><span style="color: #CD5555">&quot;alert&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>&amp;times;<span style="color: #8B008B; font-weight: bold">&lt;/button&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;strong&gt;</span>Warning!<span style="color: #8B008B; font-weight: bold">&lt;/strong&gt;</span> Best check yo self, you&#39;re not looking too good.
+        <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>      
+      <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+
+
+<!--  Alerts End -->
+
+
+<p>
+Buttons
+</p>
+
+<!--  Buttons -->
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">      <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;col-md-6&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+      <span style="color: #8B008B; font-weight: bold">&lt;h4&gt;</span>Buttons<span style="color: #8B008B; font-weight: bold">&lt;/h4&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;button</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;btn btn-large&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-compass&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;</span> Large button<span style="color: #8B008B; font-weight: bold">&lt;/button&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;button</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;btn btn-large&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Large button <span style="color: #8B008B; font-weight: bold">&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-ok&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;&lt;/button&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;button</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;btn btn-large&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Large button<span style="color: #8B008B; font-weight: bold">&lt;/button&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;br&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;button</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;btn&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-plus&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;</span> Default button<span style="color: #8B008B; font-weight: bold">&lt;/button&gt;</span> 
+        <span style="color: #8B008B; font-weight: bold">&lt;button</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;btn&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Default button <span style="color: #8B008B; font-weight: bold">&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-reply&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;&lt;/button&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;button</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;btn&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Default button<span style="color: #8B008B; font-weight: bold">&lt;/button&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;br&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;button</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;btn btn-small&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-cloud&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;</span> Small button<span style="color: #8B008B; font-weight: bold">&lt;/button&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;button</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;btn btn-small&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Small button <span style="color: #8B008B; font-weight: bold">&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-compass&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;&lt;/button&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;button</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;btn btn-small&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Small button<span style="color: #8B008B; font-weight: bold">&lt;/button&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;br&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;button</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;btn btn-mini&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-film&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;</span> Mini button<span style="color: #8B008B; font-weight: bold">&lt;/button&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;button</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;btn btn-mini&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Mini button <span style="color: #8B008B; font-weight: bold">&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-camera&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;&lt;/button&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;button</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;btn btn-mini&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Mini button<span style="color: #8B008B; font-weight: bold">&lt;/button&gt;</span>
+      <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+
+<!--  Buttons End -->
+
+<p>
+Pricing Tables
+</p>
+
+<!--  Pricing Tables -->
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;col-md-4&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;pricing-table&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;pricing-table-header&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;pricing-table-plan-title&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>Low plan<span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;pricing-table-plan-price&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>$49 
+              <span style="color: #8B008B; font-weight: bold">&lt;span</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;pricing-table-plan-price-small&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>monthly<span style="color: #8B008B; font-weight: bold">&lt;/span&gt;</span>
+            <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>  
+          <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;pricing-table-row&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>0$<span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;pricing-table-row&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>15$<span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;pricing-table-row&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>25$<span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;pricing-table-row&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-ok&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;&lt;/div&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;pricing-table-row&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>UNLIMITED<span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;pricing-table-row&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>---<span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;pricing-table-row&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-ok&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;&lt;/div&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;pricing-table-row&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>---<span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;pricing-table-row&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>---<span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;pricing-table-row-last&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;i</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;icon-ok&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;&lt;/i&gt;&lt;/div&gt;</span>
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;pricing-table-footer&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+            SELECTED PLAN
+          <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+      <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span> 
+</pre></div>
+
+<!--  Pricing Tables End -->
+
+<p>
+Clients slider
+</p>
+
+<!--  Clients slider -->
+<!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">      <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;col-md-12&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>
+        <span style="color: #8B008B; font-weight: bold">&lt;h4&gt;</span>Client slider - carousel<span style="color: #8B008B; font-weight: bold">&lt;/h4&gt;</span>             
+        <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;owl-carousel carousel-top-navigation&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>           
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;item&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span> 
+              <span style="color: #8B008B; font-weight: bold">&lt;img</span> <span style="color: #658b00">src=</span><span style="color: #CD5555">&quot;img/client-1.png&quot;</span> <span style="color: #658b00">alt=</span><span style="color: #CD5555">&quot;sdf&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>                 
+          <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>   
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;item&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span> 
+              <span style="color: #8B008B; font-weight: bold">&lt;img</span> <span style="color: #658b00">src=</span><span style="color: #CD5555">&quot;img/client-1.png&quot;</span> <span style="color: #658b00">alt=</span><span style="color: #CD5555">&quot;sdf&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>                 
+          <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span> 
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;item&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span> 
+              <span style="color: #8B008B; font-weight: bold">&lt;img</span> <span style="color: #658b00">src=</span><span style="color: #CD5555">&quot;img/client-1.png&quot;</span> <span style="color: #658b00">alt=</span><span style="color: #CD5555">&quot;sdf&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>                 
+          <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>   
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;item&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span> 
+              <span style="color: #8B008B; font-weight: bold">&lt;img</span> <span style="color: #658b00">src=</span><span style="color: #CD5555">&quot;img/client-1.png&quot;</span> <span style="color: #658b00">alt=</span><span style="color: #CD5555">&quot;sdf&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>                 
+          <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span> 
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;item&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span> 
+              <span style="color: #8B008B; font-weight: bold">&lt;img</span> <span style="color: #658b00">src=</span><span style="color: #CD5555">&quot;img/client-1.png&quot;</span> <span style="color: #658b00">alt=</span><span style="color: #CD5555">&quot;sdf&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>                 
+          <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>   
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;item&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span> 
+              <span style="color: #8B008B; font-weight: bold">&lt;img</span> <span style="color: #658b00">src=</span><span style="color: #CD5555">&quot;img/client-1.png&quot;</span> <span style="color: #658b00">alt=</span><span style="color: #CD5555">&quot;sdf&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>                 
+          <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span> 
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;item&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span> 
+              <span style="color: #8B008B; font-weight: bold">&lt;img</span> <span style="color: #658b00">src=</span><span style="color: #CD5555">&quot;img/client-1.png&quot;</span> <span style="color: #658b00">alt=</span><span style="color: #CD5555">&quot;sdf&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>                 
+          <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>   
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;item&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span> 
+              <span style="color: #8B008B; font-weight: bold">&lt;img</span> <span style="color: #658b00">src=</span><span style="color: #CD5555">&quot;img/client-1.png&quot;</span> <span style="color: #658b00">alt=</span><span style="color: #CD5555">&quot;sdf&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>                 
+          <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>                                                                                                                                                               
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;item&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span> 
+              <span style="color: #8B008B; font-weight: bold">&lt;img</span> <span style="color: #658b00">src=</span><span style="color: #CD5555">&quot;img/client-1.png&quot;</span> <span style="color: #658b00">alt=</span><span style="color: #CD5555">&quot;sdf&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>                 
+          <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>   
+          <span style="color: #8B008B; font-weight: bold">&lt;div</span> <span style="color: #658b00">class=</span><span style="color: #CD5555">&quot;item&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span> 
+              <span style="color: #8B008B; font-weight: bold">&lt;img</span> <span style="color: #658b00">src=</span><span style="color: #CD5555">&quot;img/client-1.png&quot;</span> <span style="color: #658b00">alt=</span><span style="color: #CD5555">&quot;sdf&quot;</span><span style="color: #8B008B; font-weight: bold">&gt;</span>                 
+          <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>          
+        <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>      
+      <span style="color: #8B008B; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+
+<!--  Clients slider End -->
+
+<a href="#top"><div class="back-to-top t2"><span>Back to Top</span></div></a>
+
+<hr> 
+  
+<h2><a name="css-files-and-structure">CSS Files</a></h2>
+<hr>
+<p>
+This template comes with these CSS files:
+<br><br>
+css/animate.css<br>
+css/bootstrap.min.css<br>
+css/bootstra-override.css<br>
+css/components.css<br>
+css/flexslider.css<br>
+css/font-awesome.min.css<br>
+rs-plugin/css/settings.css<br>
+css/magnific-popup.css<br>
+css/owl.carousel.css<br>
+css/style.css<br>
+css/color/color-1.css<br>
+css/color/color-2.css<br>
+css/color/color-3.css<br>
+css/color/color-4.css<br>
+css/color/color-5.css<br>
+css/color/color-6.css<br>
+css/color/color-7.css<br>
+css/color/color-8.css<br>
+</p>
+
+
+<hr>
+<a href="#top"><div class="back-to-top t2"><span>Back to Top</span></div></a>
+
+
+<h2><a name="css-files-and-structure">PHP Files</a></h2>
+<hr>
+<p>
+This template comes with these PHP files:
+<br><br>
+php/config.php<br>
+php/mail-it.php
+
+</p>
+
+
+<hr>
+<a href="#top"><div class="back-to-top t2"><span>Back to Top</span></div></a>
+  
+<h2><a name="javascript-plugins-and-scripts">JavaScript Plugins and Scripts</a></h2>
+<hr>
+<p>
+This template comes with these Javascript files:
+</p>
+<strong>jquery.js</strong>
+<br>jQuery is a Javascript library that greatly reduces the amount of code that you must write.
+<br><br>
+<strong>bootstrap.min.js</strong>
+<br>Twitter bootstrap base JavaScript file, which allows us to use many javascript components like tabs, accordion menus, dropdowns, tooltips and popovers, alert messages and so on. More information and examples can be found at <a href="http://getbootstrap.com/javascript" rel="external">http://getbootstrap.com/javascript</a>
+<br><br>
+<strong>animate.js</strong>
+<br>for animate css
+<br><br>
+<strong>jquery.flexslider-min.js</strong>
+<br>FlexSlider 2 JavaScript file.
+<br><br>
+<strong>jquery.nicescroll.min.js</strong>
+<br>nice scrollbar
+<br><br>
+<strong>jquery.isotope.min.js</strong>
+<br>A dynamic layout plugin for jQuery. The flip-side of CSS floats.
+<br><br>
+<strong>jquery.fitvids.js</strong>
+<br>A lightweight, easy-to-use jQuery plugin for fluid width video embeds. 
+<br><br>
+<strong>jquery.easing.js</strong>
+<br>Uses the built in easing capabilities added In jQuery 1.1 to offer multiple easing options 
+<br><br>
+<strong>jquery.appear.js</strong>
+<br>for appearing elements 
+<br><br>
+<strong>jquery.parallax-1.1.3.js</strong>
+<br>Parallax 
+<br><br>
+<strong>jquery.refineslide.js</strong>
+<br>Refine slider 
+<br><br>
+<strong>meanmenu.2.0.js</strong>
+<br>mobile menu plugin / mean menu 
+<br><br>
+<strong>respond.min.js</strong>
+<br>media queries for i8 and less 
+<br><br>
+<strong>retina.js</strong>
+<br>for retina images
+<br><br>
+<strong>jquery.magnific-popup.min.js</strong>
+<br>lightbox 
+<br><br>
+<strong>sly.js</strong>
+<br>SLY slider 
+<br><br>
+<strong>jquery.zoom.js</strong>
+<br>Enlarge images on click or mouseover 
+<br><br>
+<strong>jquery.themepunch.plugins.min.js</strong>
+<br>for revolution slider
+<br><br>
+<strong>jquery.themepunch.revolution.min.js</strong>
+<br>revolution slider
+<br><br>
+<strong>functions.js</strong>
+<br>The most important file of RENO template, which defines some basic javascript functions. More information inside JS file. 
+<br><br>
+
+<hr>
+<a href="#top"><div class="back-to-top t2"><span>Back to Top</span></div></a>
+<h2><a name="sources-and-credits">Sources and Credits</a></h2>
+<hr>
+<p>
+<strong>Fonts, Icons, Photos and Source Files</strong>
+<br><br>
+We've used the following files.
+<br><br>
+<h4>Included libraries</h4>
+<strong>jQuery</strong> - <a href="http://jquery.com" rel="external">http://jquery.com</a><br>
+<strong>Twitter Bootstrap</strong> - <a href="http://getbootstrap.com" rel="external">http://getbootstrap.com</a><br>
+<strong>jQuery Isotope</strong> - <a href="http://isotope.metafizzy.co" rel="external">http://isotope.metafizzy.co</a><br>
+<strong>jQuery FlexSlider 2</strong> - <a href="http://flexslider.woothemes.com" rel="external">http://flexslider.woothemes.com</a><br>
+<strong>jQuery Owl carousel</strong> - <a href="http://www.owlgraphic.com/owlcarousel" rel="external">jQuery OwlCarousel v1.19</a><br>
+<strong>jquery appear </strong> - <a href="https://github.com/bas2k/jquery.appear/" rel="external">https://github.com/bas2k/jquery.appear/</a><br>
+<strong>prettyPhoto</strong> - <a href="http://www.no-margin-for-errors.com" rel="external">http://www.no-margin-for-errors.com</a><br>
+<strong>jQuery Fitvids</strong> - <a href="http://fitvidsjs.com/" rel="external">http://fitvidsjs.com/</a><br>
+<strong>jQuery Easing</strong> - <a href="http://gsgd.co.uk/sandbox/jquery/easing/" rel="external">http://gsgd.co.uk/sandbox/jquery/easing//</a><br>
+<strong>jQuery Parallax</strong> - <a href="http://www.ianlunn.co.uk/plugins/jquery-parallax/" rel="external">http://www.ianlunn.co.uk/plugins/jquery-parallax/</a><br>
+<strong>jQuery RefineSlide plugin v0.4.1</strong> - <a href="http://github.com/alexdunphy/refineslide/" rel="external">http://github.com/alexdunphy/refineslide/</a><br>
+<strong>Retina</strong> - <a href="http://retinajs.com" rel="external">http://retinajs.com</a><br>
+<strong>Respond</strong> - <a href="https://github.com/scottjehl/Respond" rel="external">https://github.com/scottjehl/Respond</a><br>
+<strong>Animate js /css</strong> - <a href="http://daneden.me/animate/" rel="external">http://daneden.me/animate/</a><br>
+<strong>jquery.nicescroll 3.0.0</strong> - <a href="http://areaaperta.com/nicescroll" rel="external">http://areaaperta.com/nicescroll</a><br>
+<strong>meanmenu.2.0.min.js</strong> - <a href="https://github.com/weare2ndfloor/meanMenu" rel="external">https://github.com/weare2ndfloor/meanMenu</a><br>
+<strong>Sly slider js</strong> - <a href="https://github.com/Darsain/sly" rel="external">https://github.com/Darsain/sly</a><br>
+<strong>Revolution slider</strong> - <a href="http://www.themepunch.com/codecanyon/revolution/" rel="external">http://www.themepunch.com/codecanyon/revolution/</a><br>
+<strong>Magnific Popup - v0.9.5</strong> - <a href="http://dimsemenov.com/plugins/magnific-popup/" rel="external">http://dimsemenov.com/plugins/magnific-popup/</a><br>
+<strong>Mail it</strong> - <a href="http://craftedbydavid.com" rel="external" target="_blank">http://craftedbydavid.com</a><br>
+
+</p>
+<br>
+<h4>Used Fonts</h4>
+<p>
+<a href="http://www.google.com/fonts#UsePlace:use/Collection:Open+Sans" rel="external">Google Web Fonts – Open Sans</a>
+<br>
+<a href="http://www.google.com/fonts#UsePlace:use/Collection:Fauna+One" rel="external">Google Web Fonts – Fauna One</a>
+</p>
+<br>
+<h4>Included Icons</h4>
+<p>
+<strong>Font Awesome</strong> - <a href="http://fortawesome.github.com/Font-Awesome" rel="external">http://fortawesome.github.com/Font-Awesome</a><br>
+</p> 
+<br>
+<h4>Included Photoshop file</h4>
+<p>
+<strong>Layered Photoshop PSD file of Home</strong> - reno-psd/reno-home.psd<br>
+</p> 
+<br>
+
+<h4>Used Photos in Demo</h4>
+<p>
+<a href="http://www.flickr.com/photos/fiddleoak" rel="external">http://www.flickr.com/photos/fiddleoak</a><br>
+<a href="http://www.flickr.com/photos/astragony" rel="external">http://www.flickr.com/photos/astragony</a><br>
+<a href="http://www.flickr.com/photos/anieto2k" rel="external">http://www.flickr.com/photos/anieto2k</a><br>
+<a href="http://www.flickr.com/photos/markjsebastian" rel="external">http://www.flickr.com/photos/markjsebastian</a>
+</p>
+
+<br>
+<p>
+Thank you for purchasing RENO template. In case of any questions related to this template, we will to get back to you as soon as we can. We do not provide any warranty, however we are always here to help.
+<br><br>
+Best regards
+<br>
+entiri s.r.o.
+</p> 
+
+<hr>
+<a href="#top"><div class="back-to-top t2"><span>Back to Top</span></div></a>
+<h2><a name="changelog">Changelog</a></h2>
+<hr>
+<p>
+<strong>v1.2 - 12. dec. 2013</strong> <br>
+- Minor fixes
+</p> 
+<p>
+<strong>v1.1 - 13. nov. 2013</strong> <br>
+- Updated to Twitter Bootstrap 3
+</p> 
+<p>
+<strong>v1.0 - 15 oct. 2013</strong> <br>
+- Initial version
+</p>  
+
+<hr>
+<a href="#top"><div class="back-to-top t2"><span>Back to Top</span></div></a>
+  <h2 class="bottom-text">Thank You Very Much</h2>
+  <br><br>
+  <hr>
+  <div id="copyright">
+    &copy; 2013 <a href="http://www.entiri.com" rel="external" alt="entiri s.r.o.">entiri</a>
+  </div>
+  
+</div>
+
+</body>
+</html>
