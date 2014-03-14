@@ -1,11 +1,31 @@
-{% extends "base/base.html" %}
+{% extends "base/subpage.html" %}
 
-{% block subheading %}<h2>Welcome</h2>{% endblock %}
+{% block subheading %}Welcome{% endblock %}
 
-{% block body %}
-<p>
-Hey! Come on in and look around. Obviously we don't know where you've come from (duh) or where you are now (we have no spyware), but you can see our history and what's up these days. Thankfully for us all, God knows where we're at and He stands ready to help those who in dependence call out to Him.
-</p><p>
-That's the "Good News!" (Or Good Stuff, as I like to say) So check out the site and get a taste of what God is doing here at Faith. Then come for a visit, drop us an email, or give us a call. God is on the move here at FCC!
-</p>
+{% block breadcrumb %}
+    <li><a href="{{ root }}index.html">Home</a></li>
+    <li class="active">Welcome</li>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6gC7V2O7FB4" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    <div class="spacer20"></div>
+    
+    <div class="row">
+        <div class="col-md-8">
+            <p>
+            Hey! Come on in and look around. Obviously we don't know where you've come from (duh) or where you are now (we have no spyware), but you can see our history and what's up these days. Thankfully for us all, God knows where we're at and He stands ready to help those who in dependence call out to Him.
+            </p><p>
+            That's the "Good News!" (Or Good Stuff, as I like to say) So check out the site and get a taste of what God is doing here at Faith. Then come for a visit, drop us an email, or give us a call. God is on the move here at FCC!
+            </p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="{{ media }}img/randyandtammy.jpg" alt="">
+        </div>
+    </div>
 {% endblock %}

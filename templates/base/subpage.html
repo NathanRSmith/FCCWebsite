@@ -1,0 +1,18 @@
+{% extends "base/site-base.html" %}
+
+{% block body %}
+    <section>
+        <div class="page-info-2">
+            <div class="container">
+                <h3>
+                    {% block subheading %}{% endblock %}
+                </h3>
+                <ul class="breadcrumb">{% block breadcrumb %}{% endblock %}</ul>
+            </div>
+        </div>
+        
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </section>
+{% endblock %}

@@ -49,6 +49,8 @@
     <!--[if lt IE 9]>
     	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    
+    {% block extra_styles %}{% endblock %}
 </head>
 
 <body>
@@ -57,7 +59,7 @@
     {% include "base/header.html" %}
     
     <!-- Body -->
-    {% block body %}{% endblock %}
+    {% block body %}{% block content %}{% endblock %}{% endblock %}
 
     <!-- Footer -->
     {% include "base/footer.html" %}
@@ -152,7 +154,8 @@
 
         });
     </script>
-
+    
+    {% block extra_scripts %}{% endblock %}
     
 </body>
 </html>
