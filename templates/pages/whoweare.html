@@ -1,7 +1,26 @@
-{% extends "base/base.html" %}
+{% extends "base/subpage.html" %}
 
-{% block subheading %}<h2>Who We Are</h2>{% endblock %}
+{% block subheading %}Who We Are{% endblock %}
 
-{% block body %}
-Catch a sense of who we are through our History, a Current snapshot, a peak at our Staff, and our Beliefs.
+{% block breadcrumb %}
+    <li><a href="{{ root }}index.html">Home</a></li>
+    <li class="active">Who We Are</li>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bp7aoVjDn6w" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    <div class="spacer20"></div>
+    
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                Catch a sense of who we are through our <a href="{{ root }}history.html">History</a>, a <a href="{{ root }}current.html">Current</a> snapshot, a peak at our <a href="{{ root }}staff.html">Staff</a>, and our <a href="{{ root }}beliefs.html">Beliefs</a>.
+            </p>
+        </div>
+    </div>
 {% endblock %}
