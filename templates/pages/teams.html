@@ -1,8 +1,14 @@
-{% extends "base/base.html" %}
+{% extends "base/subpage.html" %}
 
-{% block subheading %}<h2>Ministry Teams</h2>{% endblock %}
+{% block subheading %}Ministry Teams{% endblock %}
 
-{% block body %}
+{% block breadcrumb %}
+    <li><a href="{{ root }}index.html">Home</a></li>
+    <li><a href="{{ root }}whatwedo.html">What We Do</a></li>
+    <li class="active">Ministry Teams</li>
+{% endblock %}
+
+{% block content %}
 <p>
 Here at FCC people don't just receive, they give.  The ministries of the church are carried out under the umbrella of a team.  Many team leaders then represent those groups on the church's general board.  See where you could fit!
 </p>
