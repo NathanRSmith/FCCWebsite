@@ -1,8 +1,14 @@
-{% extends "base/base.html" %}
+{% extends "base/subpage.html" %}
 
-{% block subheading %}<h2>Adults</h2>{% endblock %}
+{% block subheading %}Adults{% endblock %}
 
-{% block body %}
+{% block breadcrumb %}
+    <li><a href="{{ root }}index.html">Home</a></li>
+    <li><a href="{{ root }}whatwedo.html">What We Do</a></li>
+    <li class="active">Adults</li>
+{% endblock %}
+
+{% block content %}
 <p>
 Church is definitely not just for kids!  Our adults, married, singles, young and old alike can take part in a bunch of activities.  
 </p>
@@ -15,12 +21,14 @@ Church is definitely not just for kids!  Our adults, married, singles, young and
     <li>Eating in one another's homes or going out to eat with friends</li>
     <li>Participating in occasional events to benefit those in need</li>
     <li>Annual Bar-B-Q</li>
-    <li>And much more.........</li>
- 
+    <li>And much more...</li>
+</ul>
+
+<div class="spacer10"></div>
 <p>
 There is a place for you here at FCC!
 </p>
 <p>
-Want to do more than simply attend?  Then get involved on one of our many MINISTRY TEAMS.
+Want to do more than simply attend?  Then get involved on one of our many <a href="{{ root }}teams.html">MINISTRY TEAMS</a>.
 </p>
 {% endblock %}
