@@ -42,6 +42,7 @@ def build():
             # pdb.set_trace()
             with open(os.path.join(*([BUILD_DIR]+path_rel_build+[template])), 'w') as f:
                 try:
+                    print 'Rendering %s' % os.path.join( *(sroot[1:]+[template]) )
                     f.write(
                         env.get_template(
                             os.path.join(
@@ -54,16 +55,19 @@ def build():
                     raise
     
     # copy static files
+    print 'Copying static files'
     shutil.copytree('static', os.path.join(BUILD_DIR, 'static'))
     
     # copy media files
+    print 'Copying media files'
     shutil.copytree('media', os.path.join(BUILD_DIR, 'media'))
     
     # copy bower resources
     if os.path.exists('bower_components'):
+        print 'Copying bower files'
         shutil.copytree('bower_components', os.path.join(BUILD_DIR, 'bower_components'))
 
-
+    print 'Done'
                           
 
 if __name__ == '__main__':
