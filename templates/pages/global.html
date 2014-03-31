@@ -1,8 +1,13 @@
-{% extends "base/base.html" %}
+{% extends "base/subpage.html" %}
 
-{% block subheading %}<h2>Global Missions</h2>{% endblock %}
+{% block subheading %}Global Missions{% endblock %}
 
-{% block body %}
+{% block breadcrumb %}
+    <li><a href="{{ root }}index.html">Home</a></li>
+    <li class="active">Global Missions</li>
+{% endblock %}
+
+{% block content %}
 <p>
 FCC participates relationally and financially with several different missionaries and ministries in a variety of countries around the world. Giving for some is accomplished as a line item in our annual church budget, others as special offerings, and still others as individual families in the church decide to partner with a given missionary.
 </p><p>
