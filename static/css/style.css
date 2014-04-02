@@ -23,7 +23,7 @@ body {
   font-family: "Open Sans", sans-serif;
 	font-size: 13px;
 	line-height: 20px;
-	color: #A0ACBA;
+	color: #707882;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%;	
 	cursor:default;
@@ -35,7 +35,7 @@ body {
 p {
   font-family: "Open Sans", sans-serif;
   margin: 0px 0px 20px 0px;
-  color: #A0ACBA;
+  color: #707882;
 }
 
 
@@ -76,7 +76,7 @@ h4, h4 a {
   font-family: "Open Sans", sans-serif;
   font-size:22px;
   font-weight:300;
-  color: #A0ACBA;
+  color: #707882;
   margin:0px 0px 20px 0px;
 }
 
@@ -90,7 +90,7 @@ h5, h5 a{
 h6, h6 a{
   font-family: "Open Sans", sans-serif;
   font-size:15px;
-  color:#A0ACBA;
+  color:#707882;
   margin:0px 0px 15px 0px;
 }
 
@@ -162,7 +162,7 @@ h4.logo-footer {
 }
 
 .logo-dash {
-  color: #A0ACBA;
+  color: #707882;
 }
 
 .list-footer {
@@ -184,7 +184,7 @@ h4.logo-footer {
 
 .list-footer li i {
   font-size:18px;
-  color: #A0ACBA;
+  color: #707882;
 }  
 
 .list-footer .box-small {
@@ -215,7 +215,7 @@ h4.logo-footer {
 .divider-social {
   display:inline-block;
   margin:0px 5px;
-  border-left:1px solid #A0ACBA; 
+  border-left:1px solid #707882; 
   width: 1px;
   height: 16px;
   line-height:32px;
@@ -225,7 +225,7 @@ h4.logo-footer {
 a.social-icon-main i{
   display:inline-block; 
 	background: transparent;
-  color:#A0ACBA; 
+  color:#707882; 
   margin: 0px 0px 0px 0px;
 	cursor:pointer;
   font-size:20px;
@@ -1196,7 +1196,7 @@ ul.rs-slider {
 }
 
 .rs-caption p {
-    color: #A0ACBA;
+    color: #707882;
     margin: 0;
 }
 
@@ -1283,7 +1283,7 @@ ul.rs-slider {
 .navbar .nav > li > a, .navbar .nav > li.active > a {
 	font-family: 'Open Sans', serif;
   font-size: 15px;
-	color: #A0ACBA;
+	color: #707882;
 	display: inline-block;
   -webkit-border-radius: 0px !important;
   -moz-border-radius: 0px !important;
@@ -1385,7 +1385,7 @@ ul.rs-slider {
   margin:0px;
   display:block;
   text-decoration:none;
-  color: #A0ACBA;
+  color: #707882;
   border-bottom: 1px solid #C8CFD7;
   border-left: 0px #C8CFD7 solid;
   border-right: 0px #C8CFD7 solid;
@@ -1614,7 +1614,7 @@ a.meanmenu-reveal {
 }
 
 .project-item:hover, .project-item-isotope:hover {  
-  border:1px solid  #A0ACBA;
+  border:1px solid  #707882;
 }
 
 .project-image {
@@ -1688,7 +1688,7 @@ border: 1px solid #C8CFD7;
   -webkit-box-shadow: inset 0 0 0px #000; 
   -moz-box-shadow: inset 0 0 0px #000;
   box-shadow: inset 0 0 0px #000;
-  color:#A0ACBA;
+  color:#707882;
 }
 
 .form-main input:focus, .form-main textarea:focus, .form-404 input:focus, .form-search .search-input:focus   {
@@ -1703,7 +1703,7 @@ border: 1px solid #C8CFD7;
   height:40px;
   padding:0px; 
   margin-bottom:15px;
-  color: #A0ACBA;
+  color: #707882;
   border:1px #C8CFD7 solid;
   -webkit-box-shadow: inset 0 0 0px #000; 
   -moz-box-shadow: inset 0 0 0px #000;
@@ -1761,7 +1761,7 @@ border: 1px solid #C8CFD7;
 
 
 .our-team:hover {  
-  border:1px solid  #A0ACBA;
+  border:1px solid  #707882;
 }
 
 .our-team-image {
@@ -2100,7 +2100,7 @@ hr.blog{
 }
 
 .shop-item:hover {  
-  border:1px solid  #A0ACBA;;
+  border:1px solid  #707882;;
   background: #FFFFFF;
   opacity: 1;
 }
@@ -2117,7 +2117,7 @@ hr.blog{
 }
 
 .shop-item-2:hover {  
-  border:1px solid  #A0ACBA;;
+  border:1px solid  #707882;;
   background: #FFFFFF;
   opacity: 1;
 }
@@ -2208,7 +2208,7 @@ hr.blog{
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color:#A0ACBA;
+  color:#707882;
   -webkit-box-shadow: 0 0px 0 #CCCCCC, 0 0px #fff inset;
   -moz-box-shadow: 0 0px 0 #CCCCCC, 0 0px #fff inset;
   box-shadow: 0 0px 0 #CCCCCC, 0 0px #fff inset;
@@ -2219,7 +2219,7 @@ hr.blog{
 .rating-shop-item{unicode-bidi:bidi-override;direction:rtl;font-size:22px;text-align: left; margin-bottom:15px; padding-top:6px;}
 .rating-shop-item span.star{font-family:FontAwesome;font-weight:normal;font-style:normal;display:inline-block;}
 .rating-shop-item span.star:hover{cursor:pointer;}
-.rating-shop-item span.star:before{content:"\f006";padding-right:5px;color:#A0ACBA;}
+.rating-shop-item span.star:before{content:"\f006";padding-right:5px;color:#707882;}
 .rating-shop-item span.star:hover:before,.rating-shop-item span.star:hover~span.star:before{content:"\f005";color:#e3cf7a;}
 
 
@@ -2234,7 +2234,7 @@ hr.blog{
   line-height: 20px;
   text-align: center;
   text-shadow: none;
-  color:#A0ACBA;
+  color:#707882;
   background-color: #FFFFFF;
   border: 1px solid #C8CFD7;
   cursor: pointer;
@@ -2258,7 +2258,7 @@ hr.blog{
   font-weight: normal;
   line-height: 20px;
   text-align: center;
-  color:#A0ACBA;
+  color:#707882;
   background-color: #FFFFFF;
 }
 
@@ -2293,7 +2293,7 @@ hr.blog{
 
 .shop-cart-header-text-2 {
   font-size:14px;
-  color:#A0ACBA;
+  color:#707882;
 }
 
 .shop-cart-header-text {
@@ -2367,7 +2367,7 @@ hr.blog{
   position:relative;
   width:100%;
   text-align:center;
-  color:#A0ACBA;
+  color:#707882;
   margin:0px 0px 30px 0px;
   -webkit-transition: all 300ms ease-in-out !important; 
      -moz-transition: all 300ms ease-in-out !important;
@@ -2399,7 +2399,7 @@ hr.blog{
   border-right:1px solid #C8CFD7;
   padding: 12px 5px;
   background: #FFFFFF;
-  color:#A0ACBA; 
+  color:#707882; 
 }
 
 .pricing-table-row-last {
@@ -2495,7 +2495,7 @@ hr.blog{
   padding:12px 15px;
   margin:0px;
   border:0px;
-  color: #A0ACBA;
+  color: #707882;
   background:#FFFFFF;
   border: 1px solid transparent;
   font-family: "Open Sans";
@@ -2508,7 +2508,7 @@ hr.blog{
 }
  
 #portfolio-filter li:hover a {
-  color: #A0ACBA;
+  color: #707882;
   background:#FFFFFF;
   border: 1px solid #C8CFD7;
   text-decoration:none;
