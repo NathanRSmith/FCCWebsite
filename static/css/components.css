@@ -365,7 +365,7 @@ blockquote {
 
 .panel-group .panel-heading {
   background:#FFF;
-  height:45px;
+  min-height:45px;
 }
 
 .panel-group .panel-heading h4 a{
