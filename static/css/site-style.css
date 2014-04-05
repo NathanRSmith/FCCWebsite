@@ -1,3 +1,10 @@
 .social-icon-main.social-text {
     font-size: 20px;
 }
+
+.our-team-social i.rightmost-icon {
+    margin-right: 0px;
+}
+.our-team-social i {
+    margin-bottom: 0px;
+}
