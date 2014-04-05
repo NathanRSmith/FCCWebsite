@@ -4,6 +4,7 @@ make a Python virtualenv
     nodeenv -p
     npm install -g bower
     bower install
+    env ARCHFLAGS="-Wno-error=unused-command-line-argument-hard-error-in-future" pip install fabric
 
 To build:
 
@@ -11,9 +12,12 @@ To build:
 
 Built site is in build directory.
 
-    cd build
-    python -m SimpleHTTPServer
+    open build/index.html
 
 To push to gh-pages
 
     ghp-import -np build
+
+To deploy to server after building and pushing to gh-pages
+
+    fab remote deploy

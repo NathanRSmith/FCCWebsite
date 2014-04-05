@@ -2,8 +2,6 @@ import os, shutil
 
 from jinja2 import Environment, FileSystemLoader
 
-import ipdb as pdb
-
 def build():
     env = Environment(loader=FileSystemLoader('templates'))
     PAGES_DIR = os.path.join('templates', 'pages')
@@ -39,7 +37,6 @@ def build():
                 'bower': '/'.join(root_url_list+[BOWER_DIR, '']),
             }
             
-            # pdb.set_trace()
             with open(os.path.join(*([BUILD_DIR]+path_rel_build+[template])), 'w') as f:
                 try:
                     print 'Rendering %s' % os.path.join( *(sroot[1:]+[template]) )
