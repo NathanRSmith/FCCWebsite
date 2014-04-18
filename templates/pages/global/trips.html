@@ -1,10 +1,11 @@
 {% extends "base/subpage.html" %}
 
-{% block subheading %}Global Missions{% endblock %}
+{% block subheading %}Mission Trips{% endblock %}
 
 {% block breadcrumb %}
     <li><a href="{{ root }}index.html">Home</a></li>
-    <li class="active">Global Missions</li>
+    <li><a href="{{ root }}global/index.html">Global Focus</a></li>
+    <li class="active">Mission Trips</li>
 {% endblock %}
 
 {% block extra_styles %}
@@ -17,164 +18,8 @@
 
 {% block content %}
 <p>
-FCC participates relationally and financially with several different missionaries and ministries in a variety of countries around the world. Giving for some is accomplished as a line item in our annual church budget, others as special offerings, and still others as individual families in the church decide to partner with a given missionary.
-</p><p>
-Here are some of the organizations and individuals with whom we participate (not all are listed for security reasons):
+    In addition to supporting long term missionaries, Faith Community Church also sends out occasional short term mission teams. The following videos recap these various trips.
 </p>
-
-
-<div class="row">
-    <div class="col-md-4">
-        <div class="our-team">
-            <div class="our-team-image">
-                <a href="{{ media }}img/global/andrewanna.jpg" class="zoom popup-link">
-                    <img src="{{ media }}img/global/back2back.jpg" alt="#">
-                </a>
-            </div>
-            <div class="our-team-text">
-                <h5>Andrew &amp; Anna</h5>
-                <h6>Mexico</h6>
-                <p>Serving with <a href="http://www.back2back.org/" target="_blank">Back 2 Back Ministries</a> in Mexico working with at-risk children and women.</p>
-            </div>
-        </div>
-    
-    </div><div class="col-md-4">
-        
-        <div class="our-team">
-            <div class="our-team-image">
-                <a href="{{ media }}img/global/aaroncandace.jpg" class="zoom popup-link">
-                    <img src="{{ media }}img/global/projectabraham.jpg" alt="#">
-                </a>
-            </div>
-            <div class="our-team-text">
-                <h5>Aaron &amp; Candace</h5>
-                <h6>Costa Rica</h6>
-                <p>Serving with <a href="http://worldmissionsevangelism.com/" target="_blank">World Missions &amp; Evangelism</a> at the <a href="http://www.abrahamproject.org/" target="_blank">Abraham Project</a> in ministries to at-risk children.</p>
-            </div>
-        </div>
-        
-    </div><div class="col-md-4">
-          
-        <div class="our-team">
-            <div class="our-team-image">
-                <a href="{{ media }}img/global/sten.jpg" class="zoom popup-link">
-                    <img src="{{ media }}img/global/stenpoor.jpg" alt="#">
-                </a>
-            </div>
-            <div class="our-team-text">
-                <h5><a href="http://www.studiotenministries.org/" target="_blank">Studio Ten Ministries</a></h5>
-                <h6>South Asia</h6>
-                <p>Personnel with <a href="http://www.studiotenministries.org/" target="_blank">Studio Ten Ministries</a> working in church planting, education, and ministries to at-risk children and women.</p>
-            </div>
-        </div> 
-        
-    </div>
-</div><div class="row">
-    <div class="col-md-4">
-
-        <div class="our-team">
-            <div class="our-team-image">
-                <a href="{{ media }}img/global/gaboemily.jpg" class="zoom popup-link">
-                    <img src="{{ media }}img/global/mexicocitylunch.jpg" alt="#">
-                </a>
-            </div>
-            <div class="our-team-text">
-                <h5>Gabo &amp; Emily</h5>
-                <h6>Mexico</h6>
-                <p>Serving with <a href="http://www.cten.org/" target="_blank">Commission to Every Nation</a> in Mexico in ministries to university students.</p>
-            </div>
-        </div>
-        
-    </div><div class="col-md-4">
-        
-        <div class="our-team">
-            <div class="our-team-image">
-                <a href="{{ media }}img/global/costaricagt.jpg" class="zoom popup-link">
-                    <img src="{{ media }}img/global/middleeastbazaar.jpg" alt="#">
-                </a>
-            </div>
-            <div class="our-team-text">
-                <h5><a href="http://www.global-teams.net/" target="_blank">Global Teams</a></h5>
-                <h6>Costa Rica</h6>
-                <p>Personnel with <a href="http://www.global-teams.net/" target="_blank">Global Teams</a> in Costa Rica raising up Latinos to serve in the Middle East.</p>
-            </div>
-        </div>
-          
-        
-    </div><div class="col-md-4">
-        
-        <div class="our-team">
-            <div class="our-team-image">
-                <a href="{{ media }}img/global/paulcarlene.jpg" class="zoom popup-link">
-                    <img src="{{ media }}img/global/poland.jpg" alt="#">
-                </a>
-            </div>
-            <div class="our-team-text">
-                <h5>Paul &amp; Carlene</h5>
-                <h6>Poland</h6>
-                <p>Serving with <a href="http://www.send.org/" target="_blank">SEND International</a> in Poland working in church planting.</p>
-            </div>
-        </div>
-       
-    
-    </div>
-</div><div class="row">
-
-    <div class="col-md-4">
-
-        <div class="our-team">
-            <div class="our-team-image">
-                <a href="{{ media }}img/global/randyglobal.jpg" class="zoom popup-link">
-                    <img src="{{ media }}img/global/randyhaiti.jpg" alt="#">
-                </a>
-            </div>
-            <div class="our-team-text">
-                <h5>Dr. Randy Smith</h5>
-                <h6>Worldwide</h6>
-                <p>Lead Pastor at <a href="http://faithcommunitychurchonline.org/" target="_blank">Faith Community Church</a>, ministering in a very part-time capacity as a pastoral friend to several cross-cultural missionaries. Faith Community Church also sends out occasional short-term mission teams.  Visit his website <a href="http://globalmissionsonline.org/" target="_blank">www.globalmissionsonline.org</a></p>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="col-md-4">
-        
-        <div class="our-team">
-            <div class="our-team-image">
-                <a href="{{ media }}img/global/cornerstone.jpg" class="zoom popup-link">
-                    <img src="{{ media }}img/global/abrahamcornerstone.jpg" alt="#">
-                </a>
-            </div>
-            <div class="our-team-text">
-                <h5><a href="http://www.cornerstoneinternational.org/" target="_blank">Cornerstone International</a></h5>
-                <h6>Costa Rica</h6>
-                <p>Child sponsorship in Costa Rica.</p>
-            </div>
-        </div>
-        
-    </div>
-    
-    
-    <div class="col-md-4">
-        
-        <div class="our-team">
-            <div class="our-team-image">
-                <a href="{{ media }}img/global/compassion1.jpg" class="zoom popup-link">
-                    <img src="{{ media }}img/global/compassion2.jpg" alt="#">
-                </a>
-            </div>
-            <div class="our-team-text">
-                <h5><a href="http://www.compassion.com/" target="_blank">Compassion International</a></h5>
-                <h6>Indonesia</h6>
-                <p>Child sponsorship in Indonesia.</p>
-            </div>
-        </div>
-
-    </div>
-    
-</div>
-
-<p>In addition to supporting long term missionaries, Faith Community Church also sends out occasional short term mission teams. The following videos recap these various trips.</p>
 
 <div>
     
