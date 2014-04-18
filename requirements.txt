@@ -4,3 +4,4 @@ ghp-import==0.4.1
 nodeenv==0.7.2
 readline==6.2.4.1
 wsgiref==0.1.2
+fabric==1.8.3
