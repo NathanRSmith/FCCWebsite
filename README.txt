@@ -21,3 +21,8 @@ To push to gh-pages
 To deploy to server after building and pushing to gh-pages
 
     fab remote deploy
+
+
+Notes
+
+Revolution Slider Docs: http://catapultthemes.com/documentation/documentation.html
