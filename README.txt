@@ -23,6 +23,18 @@ To deploy to server after building and pushing to gh-pages
     fab remote deploy
 
 
+--------------------------
+Deploying to the Live Site
+--------------------------
+
+Follow the standard workflow.  Make changes, `python build.py` and preview locally from `build/`.  
+When ready, `ghp -np build/` & `git commit -am '<comment>'`.
+Preview on GitHub (http://nathanrsmith.github.io/FCCWebsite/).
+If everything looks ok, deploy to the server `fab remote deploy` and enter the hosting username/password when prompted.
+
+
+-----
 Notes
+-----
 
 Revolution Slider Docs: http://catapultthemes.com/documentation/documentation.html
