@@ -5,7 +5,7 @@ from fabric.contrib.console import confirm
 def remote():
     env.hosts = ['faithcommunitychurchonline.org']
     env.user = prompt('Username: ')
-    env.deploy_dir = '~/FCCWebsite/'
+    env.deploy_dir = '~/public_html/'
     env.repo = 'https://github.com/NathanRSmith/FCCWebsite.git'
     env.branch = 'gh-pages'
 
