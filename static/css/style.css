@@ -1240,7 +1240,7 @@ ul.rs-slider {
   display: block;
   margin-top: 0px;
   border:0px solid;
-  max-width:302px;
+  max-width:252px;
   overflow:hidden;
   position:relative;
   padding:10px 0px;    
@@ -1249,7 +1249,7 @@ ul.rs-slider {
 
 .navbar-move img{
   width:100%;
-  max-width: 68px;
+  max-width: 152px;
   max-height:60px;
 }
 
