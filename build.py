@@ -1,10 +1,14 @@
 import os, shutil
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 from jinja2 import Environment, FileSystemLoader
 
 def build():
     env = Environment(loader=FileSystemLoader('templates'))
     PAGES_DIR = os.path.join('templates', 'pages')
+    sPAGES_DIR = PAGES_DIR.split(os.sep)
     BUILD_DIR = 'build'
     BOWER_DIR = 'bower_components'
     STATIC_DIR = 'static'
@@ -21,9 +25,10 @@ def build():
 
     # render templates
     for root, dirs, files in os.walk(PAGES_DIR):
+        
         sroot = root.split(os.sep)
         for d in dirs:
-            os.mkdir(os.path.join(BUILD_DIR, d))
+            os.mkdir(os.path.join(*([BUILD_DIR]+sroot[len(sPAGES_DIR):]+[d])))
 
         for template in files:
             if template.endswith('.html'):
