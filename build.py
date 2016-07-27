@@ -5,6 +5,18 @@ sys.setdefaultencoding('utf-8')
 
 from jinja2 import Environment, FileSystemLoader
 
+ALLOWED_TEMPLATE_EXTENSIONS = [
+    'html',
+    'CNAME',
+    'txt',
+]
+
+def check_extension(file):
+    for ext in ALLOWED_TEMPLATE_EXTENSIONS:
+        if file.endswith(ext):
+            return True
+    return False
+
 def build():
     env = Environment(loader=FileSystemLoader('templates'))
     PAGES_DIR = os.path.join('templates', 'pages')
@@ -14,7 +26,7 @@ def build():
     STATIC_DIR = 'static'
     MEDIA_DIR = 'media'
 
-    # make build directory
+    # make build directory & remove existing files
     if not os.path.exists(BUILD_DIR):
         os.makedirs(BUILD_DIR)
     root, dirs, files = next(os.walk(BUILD_DIR))
@@ -25,13 +37,13 @@ def build():
 
     # render templates
     for root, dirs, files in os.walk(PAGES_DIR):
-        
+
         sroot = root.split(os.sep)
         for d in dirs:
             os.mkdir(os.path.join(*([BUILD_DIR]+sroot[len(sPAGES_DIR):]+[d])))
 
         for template in files:
-            if template.endswith('.html'):
+            if check_extension(template):
                 path_rel_build = sroot[len(PAGES_DIR.split(os.sep)):]
                 root_url_list = [os.pardir]*len(path_rel_build)
                 root_url = '/'.join(root_url_list)
