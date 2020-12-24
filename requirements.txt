@@ -1,7 +1,4 @@
-Jinja2==2.7.2
-MarkupSafe==0.18
-ghp-import==0.4.1
-nodeenv==0.13.6
-readline==6.2.4.1
-wsgiref==0.1.2
-fabric==1.8.3
+ghp-import==0.5.5
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+
