@@ -18,10 +18,6 @@ To push to gh-pages
 
     ghp-import -np build
 
-To deploy to server after building and pushing to gh-pages
-
-    fab remote deploy
-
 
 --------------------------
 Deploying to the Live Site
