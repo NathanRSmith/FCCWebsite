@@ -3,5 +3,6 @@ build/
 */.DS_Store
 *.pyc
 */*.pyc
-bower_components/
-node_modules/
+bower_components
+node_modules
+.devcontainer
